@@ -1,0 +1,24 @@
+<svg width="866" height="760" viewBox="0 0 866 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_i)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M39.7192 164.723C35.2824 147.519 41.7111 136.237 59.0054 130.877C464.231 75.6826 673.49 47.1425 686.782 45.2563C700.073 43.3701 709.003 50.095 713.57 65.4311C787.43 339.957 826.677 484.421 831.309 498.823C835.942 513.225 833.418 522.434 823.738 526.45C425.295 645.939 217.427 708.364 200.133 713.725C182.838 719.085 171.037 713.098 164.73 695.763C85.8262 358.941 44.156 181.927 39.7192 164.723Z" fill="url(#paint0_linear)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M39.7192 164.723C35.2824 147.519 41.7111 136.237 59.0054 130.877C464.231 75.6826 673.49 47.1425 686.782 45.2563C700.073 43.3701 709.003 50.095 713.57 65.4311C787.43 339.957 826.677 484.421 831.309 498.823C835.942 513.225 833.418 522.434 823.738 526.45C425.295 645.939 217.427 708.364 200.133 713.725C182.838 719.085 171.037 713.098 164.73 695.763C85.8262 358.941 44.156 181.927 39.7192 164.723Z" fill="white" fill-opacity="0.04"/>
+</g>
+<path d="M62.0001 163.326C60.4065 156.476 65.0199 149.729 71.9822 148.729L688.038 60.2548C694.03 59.3943 699.725 63.1316 701.32 68.9712L818.899 499.456C820.625 505.775 816.964 512.311 810.673 514.14L198.042 692.296C191.432 694.218 184.563 690.197 183.003 683.492L62.0001 163.326Z" fill="white"/>
+<defs>
+<filter id="filter0_i" x="-2" y="-2" width="867.372" height="761.567" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-2" dy="-2"/>
+<feGaussianBlur stdDeviation="4"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.24 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
+</filter>
+<linearGradient id="paint0_linear" x1="-494.115" y1="-249.045" x2="1576.33" y2="316.644" gradientUnits="userSpaceOnUse">
+<stop stop-color="#21A2FF"/>
+<stop offset="0.467271" stop-color="#0D1151"/>
+<stop offset="1" stop-color="#FF00C9"/>
+</linearGradient>
+</defs>
+</svg>

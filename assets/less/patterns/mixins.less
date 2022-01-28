@@ -1,0 +1,147 @@
+.radius(@size: 50%){
+    -webkit-border-radius: @size;
+    -moz-border-radius: @size;
+    border-radius: @size;
+}
+
+.cover(){
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+.order( @position: inherit ){
+    -webkit-box-ordinal-group: @position; 
+    -moz-box-ordinal-group: @position;     
+    -ms-flex-order: @position;             
+    -webkit-order: @position;     
+    order: @position;
+}
+
+.flexbox(){
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap; 
+}
+
+@font-face {
+    font-family: 'archia';
+    src: url('fonts/archia-thin-webfont.eot');
+    src: url('fonts/archia-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/archia-thin-webfont.woff2') format('woff2'),
+         url('fonts/archia-thin-webfont.woff') format('woff'),
+         url('fonts/archia-thin-webfont.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'archia';
+    src: url('fonts/archia-light-webfont.eot');
+    src: url('fonts/archia-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/archia-light-webfont.woff2') format('woff2'),
+         url('fonts/archia-light-webfont.woff') format('woff'),
+         url('fonts/archia-light-webfont.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'archia';
+    src: url('fonts/archia-regular-webfont.eot');
+    src: url('fonts/archia-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/archia-regular-webfont.woff2') format('woff2'),
+         url('fonts/archia-regular-webfont.woff') format('woff'),
+         url('fonts/archia-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'archia';
+    src: url('fonts/archia-medium-webfont.eot');
+    src: url('fonts/archia-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/archia-medium-webfont.woff2') format('woff2'),
+         url('fonts/archia-medium-webfont.woff') format('woff'),
+         url('fonts/archia-medium-webfont.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'archia';
+    src: url('fonts/archia-semibold-webfont.eot');
+    src: url('fonts/archia-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/archia-semibold-webfont.woff2') format('woff2'),
+         url('fonts/archia-semibold-webfont.woff') format('woff'),
+         url('fonts/archia-semibold-webfont.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'archia';
+    src: url('fonts/archia-bold-webfont.eot');
+    src: url('fonts/archia-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/archia-bold-webfont.woff2') format('woff2'),
+         url('fonts/archia-bold-webfont.woff') format('woff'),
+         url('fonts/archia-bold-webfont.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:"brutal";
+    src:url("fonts/brutal-extralight-webfont.eot");
+    src:url("fonts/brutal-extralight-webfont.eot?#iefix") format("eot"),
+        url("fonts/brutal-extralight-webfont.woff2") format("woff2"),
+        url("fonts/brutal-extralight-webfont.woff") format("woff"),
+        url("fonts/brutal-extralight-webfont.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:"brutal";
+    src:url("fonts/brutal-light-webfont.eot");
+    src:url("fonts/brutal-light-webfont.eot?#iefix") format("eot"),
+        url("fonts/brutal-light-webfont.woff2") format("woff2"),
+        url("fonts/brutal-light-webfont.woff") format("woff"),
+        url("fonts/brutal-light-webfont.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:"brutal";
+    src:url("fonts/brutal-regular-webfont.eot");
+    src:url("fonts/brutal-regular-webfont.eot?#iefix") format("eot"),
+        url("fonts/brutal-regular-webfont.woff2") format("woff2"),
+        url("fonts/brutal-regular-webfont.woff") format("woff"),
+        url("fonts/brutal-regular-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:"brutal";
+    src:url("fonts/brutal-medium-webfont.eot");
+    src:url("fonts/brutal-medium-webfont.eot?#iefix") format("eot"),
+        url("fonts/brutal-medium-webfont.woff2") format("woff2"),
+        url("fonts/brutal-medium-webfont.woff") format("woff"),
+        url("fonts/brutal-medium-webfont.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:"brutal";
+    src:url("fonts/brutal-extrabold-webfont.eot");
+    src:url("fonts/brutal-extrabold-webfont.eot?#iefix") format("eot"),
+        url("fonts/brutal-extrabold-webfont.woff2") format("woff2"),
+        url("fonts/brutal-extrabold-webfont.woff") format("woff"),
+        url("fonts/brutal-extrabold-webfont.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}

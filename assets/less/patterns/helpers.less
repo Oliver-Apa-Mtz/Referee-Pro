@@ -1,0 +1,135 @@
+.btn-primary{
+	display: flex;
+	width: 240px;
+	height: 64px;
+	align-items: center;
+	justify-content: center;
+	background: @primary500;
+	text-transform: uppercase;
+	color: @white;
+	font-weight: 700;
+	font-size: 1.6rem;
+	transition: all .3s;
+	&:hover{
+		background: @primary700;
+	}
+	&:focus{
+		border: 2px solid @blue500;
+		outline: none;
+	}
+	&:active{
+		background: @primary800;
+	}
+	&__large{
+		width: 256px;
+	}
+	&__small{
+		width: 216px;
+		height: 56px;
+	}
+	&__expanded{
+		width: 100%;
+	}
+}
+
+.btn-secondary{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 320px;
+	height: 64px;
+	background: #1A1A1A;
+	font-family: @fontsecondary;
+	color: @white;
+	font-size: 1.6rem;
+	font-weight: 800;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-normal{
+    font-weight: normal;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.grid-container{
+	position: relative;
+	width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0 20px;
+    &.expanded{
+        max-width: 100%;
+        padding: 0px;
+    }
+}
+
+.flexbox{
+  	display: -ms-flexbox;
+  	display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap; 
+}
+
+.align-right {
+  	-ms-flex-pack: end;
+	justify-content: flex-end; 
+}
+
+.align-center {
+  	-ms-flex-pack: center;
+	justify-content: center; 
+}
+
+.align-justify {
+  	-ms-flex-pack: justify;
+  	justify-content: space-between; 
+}
+
+.align-spaced {
+  	-ms-flex-pack: distribute;
+    justify-content: space-around; 
+}
+
+.align-top {
+  	-ms-flex-align: start;
+	align-items: flex-start;
+}
+
+.align-bottom {
+	-ms-flex-align: end;
+	align-items: flex-end;
+}
+
+.align-middle{
+  	-ms-flex-align: center;
+    align-items: center;
+}
+
+.align-stretch{
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+
+.align-center-middle{
+  	-ms-flex-pack: center;
+  	justify-content: center;
+  	-ms-flex-align: center;
+  	align-items: center;
+  	-ms-flex-line-pack: center;
+  	align-content: center; 
+}
+
+.align-spaced-between{
+    -ms-flex-pack: distribute;
+    justify-content: space-between; 
+}

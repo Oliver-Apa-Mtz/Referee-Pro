@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	  	<title>Referee Pro</title>
+		<meta content="Profesionaliza tu liga o torneo. Si tu negocio es organizar competiciones de fútbol, entonces Referee Pro es para ti." name="description" />
+
+		<!--[if IE]><link rel="shortcut icon" href="./img/favicon.ico"><![endif]-->
+	    <link rel="icon" href="./img/favicon.png" sizes="16x16" type="image/png">
+	    <link href="css/styles.css" rel="stylesheet" type="text/css">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+
+	    <!--Start Script chatbot-->
+	    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="c795cea7-318e-4ef1-9ebc-119a50783f96";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script> 
+	    <!--End Script chatbot -->
+	    
+	    <script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit'></script>
+
+	</head>
+	<body class="home">
+		<div class="bottom__border"></div>
+		<div class="top__border"></div>
+		<div class="left__border"></div>
+		<div class="right__border"></div>
+
+		<header class="header">
+			<div class="grid-container expanded flexbox align-justify">
+				<a href="#start" class="header__logo">
+					<img src="./img/logo.svg" alt="RefereePro">
+				</a>
+				<nav class="header__nav flexbox">
+					<ul class="flexbox align-middle">
+						<li class="header__nav__item">
+							<a class="header__nav__item__link text-uppercase flexbox align-middle" href="#what">Qué es</a>
+						</li>
+						<li class="header__nav__item">
+							<a class="header__nav__item__link text-uppercase flexbox align-middle" href="#how">Cómo Funciona</a>
+						</li>
+						<li class="header__nav__item">
+							<a class="header__nav__item__link text-uppercase flexbox align-middle" href="#why">Porqué</a>
+						</li>
+						<li class="header__nav__item">
+							<a class="header__nav__item__link text-uppercase flexbox align-middle" href="#contact">Contacto</a>
+						</li>
+						<li class="header__nav__item">
+							<a class="header__nav__item__link text-uppercase flexbox align-middle open-chat">Soporte</a>
+						</li>
+						<li class="header__nav__item">
+							<a class="header__nav__item__link text-uppercase flexbox align-middle" href="">English</a>
+						</li>
+						<li class="header__nav__item">
+							<a class="header__nav__login flexbox align-center align-middle text-uppercase" href="http://live.refereepro.com/" target="blank">Iniciar Sesión</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__movil">
+					<div class="flexbox">
+						<div class="header__movil__link">
+							<a href="https://api.whatsapp.com/send?phone=5213322378471&text=RefereePro,%20me%20interesa%20saber%20m%C3%A1s!!" target="_blank"">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M16.5813 13.985C16.3313 13.86 15.11 13.2625 14.8813 13.18C14.6538 13.0963 14.4875 13.055 14.3213 13.305C14.1562 13.5512 13.6788 14.1088 13.5338 14.2738C13.3888 14.4363 13.2437 14.4488 12.9963 14.3363C12.7463 14.2113 11.9438 13.9487 10.9938 13.0987C10.2537 12.4362 9.75625 11.6237 9.61 11.3737C9.465 11.1237 9.59375 10.9862 9.71875 10.8612C9.83125 10.7488 9.96875 10.5737 10.0938 10.4237C10.2162 10.2737 10.2562 10.1737 10.3412 10.0112C10.4237 9.83625 10.3825 9.69875 10.32 9.57375C10.2575 9.44875 9.76 8.22375 9.5525 7.73625C9.3525 7.24875 9.14625 7.31125 8.9925 7.31125C8.84875 7.29875 8.6825 7.29875 8.5175 7.29875C8.35 7.29875 8.08 7.36125 7.8525 7.59875C7.625 7.84875 6.9825 8.44875 6.9825 9.66125C6.9825 10.8738 7.87375 12.0487 7.9975 12.2238C8.1225 12.3862 9.7525 14.8862 12.2475 15.9612C12.8425 16.2112 13.305 16.3612 13.6675 16.4862C14.2625 16.6737 14.805 16.6487 15.2337 16.5862C15.7125 16.5112 16.7062 15.9862 16.9137 15.3988C17.1262 14.8112 17.1262 14.3238 17.0637 14.2113C17.0012 14.0988 16.8387 14.0362 16.5887 13.9237L16.5813 13.985ZM12.05 20.125H12.0375C10.5625 20.125 9.1 19.725 7.825 18.975L7.525 18.7962L4.4 19.6087L5.2375 16.5712L5.0375 16.2587C4.2125 14.9462 3.775 13.4338 3.775 11.8763C3.775 7.33875 7.4875 3.63875 12.06 3.63875C14.2725 3.63875 16.3475 4.50125 17.91 6.06375C19.4725 7.61375 20.335 9.68875 20.335 11.8888C20.3313 16.4262 16.6188 20.1263 12.0562 20.1263L12.05 20.125ZM19.1 4.875C17.2 3.0375 14.7 2 12.0375 2C6.5525 2 2.0875 6.445 2.08375 11.91C2.08375 13.6562 2.54125 15.36 3.4125 16.865L2 22L7.27875 20.6225C8.73375 21.41 10.3713 21.8275 12.0375 21.8288H12.0425C17.53 21.8288 21.9975 17.3825 22 11.9163C22 9.27 20.9662 6.77875 19.0875 4.90625" fill="#33363D"/>
+								</svg>
+							</a>								
+						</div>
+						<div class="header__movil__menu">
+							<img src="/img/menu.svg" alt="Menu">
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!--submenu movil -->
+		<div class="submenu">
+			<ul class="submenu__nav">
+				<li class="submenu__nav__item">
+					<a class="submenu__nav__item__link text-uppercase flexbox align-middle align-center" href="#what">Qué es</a>
+				</li>
+				<li class="submenu__nav__item">
+					<a class="submenu__nav__item__link text-uppercase flexbox align-middle align-center" href="#how">Cómo Funciona</a>
+				</li>
+				<li class="submenu__nav__item">
+					<a class="submenu__nav__item__link text-uppercase flexbox align-middle align-center" href="#why">Porqué</a>
+				</li>
+				<li class="submenu__nav__item">
+					<a class="submenu__nav__item__link text-uppercase flexbox align-middle align-center" href="#contact">Contacto</a>
+				</li>
+				<li class="submenu__nav__item">
+					<a class="submenu__nav__item__link text-uppercase flexbox align-middle align-center open-chat">Soporte</a>
+				</li>
+				<li class="submenu__nav__item">
+					<a class="submenu__nav__item__link text-uppercase flexbox align-middle align-center" href="">English</a>
+				</li>
+				<li class="submenu__nav__item">
+					<a class="submenu__nav__item__link submenu__nav__item__link--login flexbox align-center align-middle align-center text-uppercase" href="http://live.refereepro.com/" target="blank">Iniciar Sesión</a>
+				</li>
+			</ul>
+			<ul class="submenu__social flexbox align-justify">
+				<li class="submenu__social__item">
+					<a class="submenu__social__item__link" href="https://www.instagram.com/referee_pro/" target="_blank">INSTAGRAM</a>
+				</li>
+				<li class="submenu__social__item">
+					<a class="submenu__social__item__link" href="https://www.facebook.com/RefereeProFans" target="_blank">FACEBOOK</a>
+				</li>
+				<li class="submenu__social__item">
+					<a class="submenu__social__item__link" href="https://twitter.com/RefereeProFut" target="_blank">TWITTER</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="section-video">
+			<video autoplay muted loop id="video-home-footer" poster="/img/background-hero.jpg" style="opacity: 1;">
+				<source src="/video/video.webm" type="video/webm">
+				<source src="/video/video.mp4" type="video/mp4">
+			</video>
+		</div>
+
+		<div class="section-video-banner"><!--Animación intermedia para pase de color de fondo--></div>
+		
+		<section class="section-ppal flexbox align-middle" id="start">
+			<div class="section-ppal__content">
+				<h1 class="section-ppal__title section-ppal__title--desktop text-uppercase">Profesionaliza</h1>
+				<h1 class="section-ppal__title section-ppal__title--movil text-uppercase">PROFE-SIONA-LIZA</h1>
+				<h2 class="section-ppal__sub">TU LIGA O TORNEO</h2>
+				<h3 class="section-ppal__info">Si tu negocio es organizar competiciones de fútbol, entonces Referee Pro® es para ti. La solución digital que transformará <a class="section-ppal__link" href="/data/hello-refereepro.pdf" target="_blank">la experiencia de tus clientes</a> y te ayudará a ahorrar tiempo y esfuerzo en la gestión de tu liga o torneo.</h3>
+				<div class="section-ppal__logos flexbox align-justify align-middle">
+					<img src="./img/el-pais.svg" alt="El país">
+					<img src="./img/mashable.svg" alt="Mashable">
+					<img src="./img/tnw.svg" alt="Tnw">
+					<img src="./img/techie.svg" alt="SportTechie">
+				</div>
+				<div class="flexbox align-middle">
+					<a href="#contact" class="btn-primary btn-demo">Reserva un demo</a>
+					<p class="section-ppal__call">o llámanos al <a href="tel:+52 1 3322378471">+52 1 (33) 2237 8471</a><a href="https://api.whatsapp.com/send?phone=5213322378471&text=RefereePro,%20me%20interesa%20saber%20m%C3%A1s!!" target="_blank"><img src="./img/whatsapp.svg" alt="Whatsapp"></a></p>
+				</div>
+			</div>
+			<div class="section-ppal__scroll">
+				<p class="section-ppal__scroll__text text-center">¿Quieres saber más? <b>Explora Referee Pro®</b></p>
+				<div class="section-ppal__scroll__efect"></div>
+			</div>
+		</section>
+
+		<section class="what-is">
+			<div class="grid-container" id="what">
+				<div class="what-is__heading text-center">
+					<p class="what-is__heading__intro text-uppercase">Introduciendo</p>
+					<img src="./img/logo-big.svg" alt="Referee Pro">
+					<h2 class="what-is__heading__title what-is__heading__title--desktop text-uppercase">El ecosistema digital creado <b>para todos en el fútbol</b></h2>
+					<h2 class="what-is__heading__title what-is__heading__title--movil text-uppercase"><b>El ecosistema digital</b> creado para todos en el fútbol</h2>
+				</div>
+				<div class="what-is__description flexbox align-justify align-bottom">
+					<div class="what-is__description__circle flexbox align-center align-bottom" id="what-is-circle">
+						<div class="what-is__description__circle__arrows">
+							<img src="./img/ecosistema-circle.svg" alt="Circulo">
+						</div>
+						<div class="what-is__logos">
+							<div class="what-is__description__circle__box what-is__description__circle__box--top" data-top-start="440" data-top-end="" data-left-start="680" data-left-end="">
+								<img src="./img/box1.svg" alt="RefereePro REF!" >
+							</div>
+							<div class="what-is__description__circle__box what-is__description__circle__box--right" data-top-start="340" data-top-end="" data-left-start="360" data-left-end="">
+								<img src="./img/box2.svg" alt="RefereePro CM">
+							</div>
+							<div class="what-is__description__circle__box what-is__description__circle__box--left" data-top-start="440" data-top-end="" data-left-start="0" data-left-end="">
+								<img src="./img/box3.svg" alt="RefereePro FANS">
+							</div>
+						</div>
+					</div>
+					<div class="what-is__description__content">
+						<p class="what-is__description__content__info">Referee Pro® existe para aliviar los dolores de la gestión de cualquier competición de fútbol amateur haciendo posible nuevas formas de vivirla para ti, para los participantes y también para sus seguidores.</p>
+						<p class="what-is__description__content__info">No importa si tienes muchos o pocos equipos, si manejas ligas, copas, o las dos; Tampoco importa si son de fútbol 11 vs 11, 7 vs 7, rápido, sala o street.</p>
+						<h5 class="what-is__description__content__title">Con Referee Pro® en tu liga o torneo, métele gol a...</h5>
+						<ul class="what-is__description__content__list">
+							<li><img src="./img/ball-futbol.svg" alt="Futbol">Las notas en papel.</li>
+							<li><img src="./img/ball-futbol.svg" alt="Futbol">Imprimir identificaciones de jugadores.</li>
+							<li><img src="./img/ball-futbol.svg" alt="Futbol">Adivinar el contenido de las actas arbitrales.</li>
+							<li><img src="./img/ball-futbol.svg" alt="Futbol">Transcribir información y perder información crucial en el proceso.</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="what-is__start__devices"></div>
+				<div class="what-is__devices">
+					<div class="what-is__devices__one">
+						<img src="./img/device1.svg" alt="Desktop">
+					</div>
+					<div class="what-is__devices__two">
+						<img src="./img/device2.png" alt="Ipad">
+					</div>
+					<div class="what-is__devices__three">
+						<img src="./img/device3.svg" alt="Phone">
+					</div>
+				</div>
+				<div class="what-is__end__devices"></div>
+
+				<div class="what-is__value">
+					<h2 class="what-is__value__title text-center">TU COMPETICIÓN <br><b>EN PILOTO AUTOMÁTICO</b></h2>
+					<p class="what-is__value__info text-center">Ház más fácil tu trabajo, y en el proceso, dale más a tus equipos, sus jugadores y a todos los aficionados.</p>
+					<div class="what-is__value__grid flexbox">
+						<div class="what-is__value__grid__content flexbox">
+							<div class="what-is__value__grid__item text-center">
+								<img src="./img/value1.svg" alt="Registros digitales de equipos y jugadores.</">
+								<p class="what-is__value__grid__item__text">Registros digitales de equipos y jugadores.</p>
+							</div>
+						</div>
+						<div class="what-is__value__grid__content flexbox align-center">
+							<div class="what-is__value__grid__item text-center">
+								<img src="./img/value2.svg" alt="Control parental conforme a la ley." class="order-2">
+								<p class="what-is__value__grid__item__text order-1">Control parental <br>conforme <a class="what-is__value__link" href="http://www.diputados.gob.mx/LeyesBiblio/pdf/LGPDPPSO.pdf" target="_blank">a la ley.</a></p>
+							</div>
+						</div>
+						<div class="what-is__value__grid__content flexbox align-right">
+							<div class="what-is__value__grid__item text-center">
+								<img src="./img/value3.svg" alt="Generación automática de roles de juego.">
+								<p class="what-is__value__grid__item__text">Generación automática de calendarios de juego.</p>
+							</div>
+						</div>
+						<div class="what-is__value__grid__content flexbox">
+							<div class="what-is__value__grid__item text-center">
+								<img src="./img/value4.svg" alt="Levantamiento de eventos durante el partido." class="order-2">
+								<p class="what-is__value__grid__item__text order-1">Levantamiento de eventos durante el partido.</p>
+							</div>
+						</div>
+						<div class="what-is__value__grid__content flexbox align-center">
+							<div class="what-is__value__grid__item what-is__value__grid__item--small text-center">
+								<img src="./img/value5.svg" alt="Actas y estadísticas en tiempo real.">
+								<p class="what-is__value__grid__item__text">Actas y estadísticas en tiempo real.</p>
+							</div>
+						</div>
+						<div class="what-is__value__grid__content flexbox align-right">
+							<div class="what-is__value__grid__item text-center">
+								<img src="./img/value6.svg" alt="Tu propio sitio web personalizado." class="order-2">
+								<p class="what-is__value__grid__item__text what-is__value__grid__item__text--large order-1">Tu propio sitio web personalizado.</p>
+							</div>
+						</div>
+					</div>
+					<a href="#contact" class="btn-primary btn-primary__large btn-demo">Reserva un demo</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="how-works" id="how">
+			<div class="grid-container expanded">
+				<p class="how-works__intro text-uppercase text-center">¿Cómo funciona?</p>
+				<div class="how-works__line"></div>
+			</div>
+			<div class="grid-container">
+				<h2 class="how-works__title text-center">TODO COMIENZA CON</h2>
+				<h3 class="how-works__sub text-center">EL PARTIDO</h3>
+				<p class="how-works__info text-center">Referee Pro® se pone en marcha en el instante en que suena el silbatazo inicial.</p>
+			</div>
+		</section>
+
+		<div class="how-works__player" id="how-works__video">
+			<video class="video__kick" id="v0" muted poster="/img/video.svg">
+				<source src="/video/video-kick.webm" type="video/webm">
+				<source src="/video/video-kick.mp4" type="video/mp4">
+			</video>
+			<div class="how-works__player__ball">
+				<img src="./img/small-ballon.svg" alt="Ball">
+			</div>
+		</div>
+
+		<!--Elemento intermedio de animacion de color fadein-->
+		<!--<div class="section-how-works-animation">
+			<div class="section-how-works-animation__ball">
+				<img src="./img/big-ballon.svg" alt="Ball">
+			</div>
+		</div>-->
+
+		<!--Elemento intermedio de animacion de color fadein-->
+		<div class="section-how-works-ref"><div class="section-how-works-ref__inner"></div></div>
+		
+		<section class="ref">
+			<div class="ref__container">
+				<div class="svg-animated__web">
+					<svg id="svg-ref" width="100%" viewBox="0 0 722 2002" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path id="svg-ref__path" d="M373.834 37.5392C373.834 37.5392 332.981 15.4194 331.557 15.2377C330.133 15.0559 327.631 16.31 327.631 16.31L314.963 32.8983L296.945 22.9078L311.927 6.31948C311.927 6.31948 337.082 16.6675 335.386 15.4194C333.69 14.1714 307.826 0.794077 303.009 1.14547C298.193 1.50293 291.056 2.75099 284.815 12.7415C284.815 12.7415 275.182 10.0637 272.686 9.88796C270.19 9.71226 265.731 10.7786 263.411 15.7769C261.09 20.7691 265.549 14.8863 265.549 14.8863C265.549 14.8863 271.614 14.1653 278.218 19.3454L283.749 14.8863C283.749 14.8863 274.655 9.37904 269.833 11.3178C265.01 13.2565 260.557 18.273 263.944 22.3807C267.33 26.4823 270.899 27.5547 270.899 27.5547C270.899 27.5547 276.606 18.4547 291.237 24.3437C305.869 30.2326 357.063 59.665 359.026 59.4893C360.989 59.3136 362.062 58.2412 360.808 57.3506C359.56 56.46 355.815 55.7451 357.063 54.3153C358.312 52.8855 363.128 56.8114 363.128 56.8114C363.128 56.8114 374.9 37.5452 375.615 37.1878C376.33 36.8303 379.359 37.0121 379.898 38.2601C380.431 39.5082 378.65 41.8286 378.293 43.4341C377.935 45.0396 379.365 48.6081 378.293 49.6805C377.22 50.7528 366.163 64.3058 365.091 66.0931C364.019 67.8743 362.056 71.6245 360.45 72.1577C358.845 72.6908 364.552 65.7356 365.091 63.2395C365.624 60.7434 366.163 57.3506 363.661 58.7804C361.165 60.2102 364.552 59.3136 362.771 63.597C360.989 67.8804 360.093 71.4489 358.845 71.2671C357.597 71.0914 357.239 68.0561 355.991 67.5229C354.743 66.9898 334.944 57.5324 311.752 60.7434C311.752 60.7434 305.33 62.3489 306.759 59.3136C308.189 56.2782 310.685 42.901 301.943 35.2309C293.2 27.5607 282.144 27.7364 278.575 31.6624C275.007 35.5883 276.97 46.4695 286.778 52.7098C296.587 58.9561 305.154 56.9931 305.154 56.9931L304.621 58.423C304.621 58.423 289.995 63.2395 280.181 48.4324C270.372 33.6253 279.823 28.2756 279.823 28.2756C279.823 28.2756 282.119 24.7496 291.237 26.6701C291.237 26.6701 281.429 19.1757 272.147 28.8088C262.865 38.4419 279.284 54.3213 287.13 58.5987C294.982 62.8821 303.542 62.5246 303.542 62.5246C303.542 62.5246 316.386 67.1655 318.883 98.7365C318.883 98.7365 319.603 172.627 317.986 202.253C317.986 202.253 301.719 435.404 339.07 503.484C376.421 571.564 464.984 587.225 463.179 704.706C461.373 822.188 461.973 910.751 468.001 916.168L466.663 856.897C465.13 829.64 464.645 639.807 466.56 626.369C468.48 612.931 469.189 606.406 484.19 606.019C499.191 605.631 599.781 616.385 614.758 624.449C629.728 632.513 628.196 652.476 623.973 647.871C619.75 643.267 628.965 632.131 610.917 627.52C592.874 622.916 587.494 620.226 584.423 622.916C581.351 625.606 581.351 643.266 568.682 640.958C556.014 638.656 525.297 637.117 524.528 634.045C523.758 630.974 520.305 629.441 519.536 623.298C518.766 617.154 514.931 611.011 499.185 610.629C483.445 610.247 476.193 608.739 471.158 621.765C466.123 634.785 517.997 602.565 574.82 609.86C631.643 617.154 623.197 638.656 625.118 657.086C627.038 675.516 620.895 858.654 620.895 858.654C620.895 858.654 617.732 858.987 613.037 859.672C601.041 861.423 579.018 865.47 574.05 872.092C567.138 881.307 567.138 900.119 569.058 905.111C570.979 910.103 575.201 919.318 580.194 921.239C585.186 923.159 596.8 921.62 607.312 921.62C617.823 921.62 624.348 918.167 638.556 915.859C652.763 913.556 675.028 915.477 674.265 918.549C673.501 921.62 643.548 915.095 648.928 919.7C654.302 924.304 674.652 925.074 670.811 926.994C666.97 928.915 621.283 925.074 610.147 926.225C599.011 927.376 580.2 925.843 579.049 949.259C577.898 972.682 579.818 980.358 585.192 985.732C590.566 991.106 614.37 988.422 626.657 988.422C638.943 988.422 677.336 980.552 688.084 989.094C698.832 997.637 647.389 989.094 647.389 989.094C647.389 989.094 594.019 986.992 589.415 992.893C584.81 998.788 582.89 1019.52 585.574 1027.58C588.264 1035.65 591.432 1041.79 607.318 1041.79C623.203 1041.79 647.389 1039.87 656.986 1041.79C666.583 1043.71 681.172 1044.48 674.265 1047.55C667.358 1050.63 645.469 1043.33 631.261 1044.48C617.054 1045.63 592.487 1038.33 590.948 1048.32C589.415 1058.31 589.027 1073.67 599.012 1080.19C608.996 1086.72 645.85 1085.18 658.906 1086.33C671.963 1087.49 680.79 1088.25 663.511 1090.56C646.232 1092.86 642.009 1090.94 650.073 1099.39C658.137 1107.84 645.469 1102.84 642.009 1097.09C638.556 1091.33 624.73 1088.64 618.205 1089.79C611.68 1090.94 617.823 1047.56 630.873 1049.48C643.93 1051.4 632.794 1091.33 629.341 1080.2C625.887 1069.06 658.616 1052.65 657.749 1019.15C656.883 985.653 632.025 971.543 635.866 998.419C639.707 1025.29 638.556 1072.9 646.232 1025.29C653.908 977.686 644.311 903.972 631.643 936.991C618.974 970.01 635.484 1013.78 640.858 968.471C646.232 923.165 603.234 887.075 617.054 938.142C630.873 989.21 630.873 989.203 630.873 989.203C630.873 989.203 656.216 1105.53 633.176 1101.31C610.135 1097.09 592.48 1089.79 579.806 1069.06C567.138 1048.33 560.606 1054.85 575.965 1074.44C591.323 1094.02 600.538 1087.49 603.222 1102.08C605.906 1116.67 611.668 1135.1 629.328 1150.84C646.989 1166.58 658.125 1166.2 676.555 1148.54C694.985 1130.88 696.518 1120.13 698.438 1103.62C700.359 1087.11 711.876 1092.1 713.027 1081.74C714.178 1071.37 701.122 1054.48 708.423 1046.03C715.717 1037.58 721.479 1032.21 720.71 1017.23C719.94 1002.26 720.71 1009.17 715.717 999.57C710.725 989.973 722.763 967.32 720.776 954.264C718.789 941.208 699.977 943.128 696.136 928.539C696.136 928.539 687.624 920.372 694.961 915.477C702.304 910.582 714.045 903.245 708.665 880.247C703.285 857.248 681.753 851.862 668.539 851.862C655.326 851.862 588.318 863.943 578.503 875.351C571.996 882.912 578.328 898.513 584.865 907.746C588.185 912.436 591.56 915.483 593.329 914.986C598.569 913.52 595.14 873.879 588.779 875.351C582.417 876.817 569.203 896.393 580.951 910.582C580.951 910.582 619.744 943.752 590.929 939.693C562.115 935.634 462.416 923.505 494.496 930.03C508.188 932.817 640.125 948.872 546.381 940.644C546.381 940.644 542.837 918.93 519.948 942.613C492.817 970.676 548.114 964.969 544.497 977.62C540.88 990.27 512.568 1015.58 531.846 1036.06C551.125 1056.54 550.525 1052.33 552.93 1068.59C555.342 1084.86 585.465 1090.28 586.67 1099.32C587.876 1108.35 552.33 1074.62 545.702 1074.62C539.074 1074.62 504.135 1084.92 504.135 1100.86C504.135 1116.79 505.34 1144.5 516.785 1155.95C528.23 1167.4 508.951 1155.95 508.951 1155.95C508.951 1155.95 494.49 1131.85 498.712 1104.75C502.935 1077.64 489.073 1113.18 489.073 1113.18C489.073 1113.18 464.972 1175.84 483.651 1208.37C502.329 1240.91 544.497 1254.76 559.558 1254.76C574.62 1254.76 602.332 1242.11 604.143 1244.52C605.949 1246.93 581.854 1265.01 568.598 1264.41C555.342 1263.81 511.968 1246.93 497.507 1236.7C483.045 1226.46 460.943 1202.96 459.344 1213.8C457.744 1224.64 491.484 1249.35 498.712 1251.15C505.94 1252.96 534.858 1267.42 545.702 1268.62C556.547 1269.83 571.609 1277.06 592.693 1265.01C613.776 1252.96 609.559 1264.27 595.704 1271.87C581.848 1279.47 562.569 1289.44 545.096 1285.05C527.624 1280.67 499.912 1266.21 481.839 1250.55C463.767 1234.88 452.922 1210.78 445.088 1225.84C437.254 1240.91 479.428 1254.76 486.056 1265.61C492.684 1276.45 451.716 1239.7 437.254 1240.91C422.793 1242.11 499.306 1284.36 514.973 1286.13C530.635 1287.9 537.263 1289.1 524.013 1290.91C510.763 1292.72 446.9 1263.2 451.116 1273.44C455.333 1283.68 508.351 1301.15 509.557 1310.79C510.763 1320.43 480.64 1330.07 486.662 1343.93C492.684 1357.78 505.34 1359.59 492.084 1372.84C478.828 1386.1 462.561 1392.73 468.589 1402.97C474.617 1413.2 466.178 1421.04 451.116 1409.59C436.055 1398.15 378.22 1355.37 371.592 1362C364.964 1368.63 445.694 1412.61 428.827 1418.63C411.96 1424.65 314.357 1373.44 322.796 1384.29C331.23 1395.13 427.022 1434.29 421.599 1439.11C416.177 1443.93 324.002 1395.73 331.23 1404.17C338.458 1412.6 408.343 1434.97 398.104 1439.45C387.865 1443.93 313.757 1406.58 319.785 1415.01C325.808 1423.44 364.37 1448.14 359.548 1451.76C354.725 1455.38 261.95 1378.86 247.489 1377.66C233.027 1376.45 357.742 1460.2 348.097 1465.62C338.458 1471.04 260.739 1421.03 261.944 1428.27C263.15 1435.49 310.14 1460.19 300.501 1460.19C290.862 1460.19 214.954 1405.37 220.371 1415.01C225.793 1424.65 278.811 1458.39 272.183 1459.6C265.555 1460.8 153.496 1483.31 157.713 1466.03C161.93 1448.75 175.786 1445.13 154.096 1427.66C132.407 1410.19 106.5 1419.83 124.573 1397.54C142.645 1375.25 142.046 1353.56 135.418 1350.55C128.79 1347.54 128.79 1347.54 128.79 1347.54C128.79 1347.54 119.75 1344.53 110.111 1351.15C100.472 1357.78 50.4647 1361.4 34.8034 1373.44C19.142 1385.49 -3.15342 1344.53 1.66918 1330.06C6.49178 1315.6 22.7529 1271.62 36.6149 1260.18C50.4708 1248.73 76.3771 1233.07 121.562 1221.02C166.746 1208.97 195.664 1185.47 201.086 1181.85C206.509 1178.24 231.209 1200.53 236.632 1206.55C242.054 1212.58 247.477 1221.02 243.86 1227.04C240.243 1233.06 206.509 1276.44 190.241 1290.9C173.974 1305.36 123.973 1341.51 132.407 1343.31C140.84 1345.12 208.314 1286.68 220.97 1267.41C233.621 1248.13 258.321 1224.63 254.105 1218C249.888 1211.38 212.537 1177.04 212.537 1177.04C212.537 1177.04 191.453 1177.64 202.298 1148.72C213.143 1119.8 232.421 1130.04 236.638 1136.07C240.855 1142.1 232.421 1160.77 223.988 1167.4C215.554 1174.03 221.364 1172.97 225.569 1170.54C231.155 1167.3 239.049 1143.3 241.46 1152.34C243.872 1161.38 243.872 1176.44 251.1 1181.25C258.327 1186.08 277.606 1200.53 280.623 1194.51C283.634 1188.49 287.251 1181.25 293.273 1177.64C299.295 1174.03 311.952 1167.4 314.963 1157.16C317.974 1146.91 308.94 1121.61 311.952 1112.57C314.963 1103.53 328.219 1085.46 330.024 1085.46C331.83 1085.46 323.396 1100.52 323.396 1100.52C323.396 1100.52 331.23 1092.09 334.841 1092.69C338.458 1093.29 330.018 1104.74 325.202 1109.56C320.385 1114.37 323.996 1122.21 328.213 1122.21C332.429 1122.21 351.708 1106.55 349.296 1093.89C346.885 1081.24 348.533 1070.99 342.893 1067.98C337.252 1064.97 314.357 1070.99 317.368 1067.38C320.379 1063.77 333.635 1063.77 333.635 1060.75C333.635 1057.74 313.151 1054.13 299.895 1060.16C286.639 1066.18 304.718 1052.93 316.162 1053.53C327.607 1054.13 328.213 1046.9 320.985 1045.09C313.757 1043.29 291.783 1047.41 287.566 1052.83C283.349 1058.25 282.428 1065.57 280.623 1065.57C278.817 1065.57 267.367 1074 262.55 1081.23C257.728 1088.46 253.62 1128.79 245.683 1134.25C237.747 1139.72 233.633 1121.13 231.827 1115.94C230.022 1110.75 216.166 1107.14 211.343 1106.53C206.521 1105.93 205.321 1084.84 211.943 1077.62C218.571 1070.39 248.088 1057.13 246.889 1052.32C245.683 1047.49 213.149 1066.78 205.921 1075.21C198.693 1083.64 190.859 1091.48 182.426 1087.86C173.992 1084.24 181.22 1081.23 173.992 1084.24C166.765 1087.25 156.52 1092.68 150.497 1093.88C144.475 1095.09 142.064 1096.89 136.036 1095.69C130.007 1094.48 126.396 1094.48 119.169 1104.12C111.941 1113.76 99.2845 1127.62 100.49 1129.42C101.696 1131.23 90.851 1151.11 68.5616 1167.38C46.2722 1183.65 31.2107 1211.36 33.6159 1222.2C36.0272 1233.05 26.7213 1246.3 19.9296 1257.75C13.138 1269.19 -0.118085 1300.86 10.1209 1285.02C20.3598 1269.19 37.8327 1234.85 49.8831 1217.38C61.9336 1199.91 84.223 1175.21 93.8621 1183.64C103.501 1192.07 29.3992 1241.48 42.0494 1239.06C54.6997 1236.65 90.851 1193.28 107.118 1194.48C123.385 1195.68 61.6003 1219.19 73.984 1225.81C86.3616 1232.42 167.97 1199.3 197.487 1175.2C227.011 1151.1 271.59 1073.99 263.156 1063.75C254.723 1053.51 251.106 1048.69 245.683 1037.24C240.261 1025.8 236.044 999.891 236.044 999.891C236.044 999.891 223.994 999.291 220.982 982.418C217.971 965.551 223.994 936.634 225.805 932.411C227.611 928.194 233.033 945.061 233.033 945.061L231.228 926.382L233.033 920.36L232.433 915.538L236.05 916.137L230.028 904.693L235.45 905.293V895.653L239.667 898.065V890.231L236.05 884.809L246.289 881.798L243.278 877.581L245.083 873.964L246.289 861.314L246.889 858.302C246.889 858.302 243.272 852.88 246.889 853.48C250.506 854.08 250.506 854.08 250.506 854.08L251.711 848.058V841.429L255.328 837.352L260.151 831.185L263.768 819.134L269.79 823.957L274.613 813.718L280.635 816.729C280.635 816.729 281.235 811.306 283.046 811.306C284.858 811.306 287.263 811.306 287.263 811.306L287.863 805.284L292.685 808.295L304.178 804.678C304.178 804.678 297.593 799.256 304.178 801.061C310.764 802.867 318.592 804.073 318.592 804.073L329.437 801.061L336.065 797.444C336.065 797.444 341.329 796.845 342.911 798.65C344.498 800.456 344.498 800.456 344.498 800.456L349.321 803.467C354.743 802.261 357.154 806.478 357.154 806.478L361.977 809.489L371.616 807.078C371.616 807.078 376.439 799.85 380.05 802.861C383.667 805.872 386.678 810.089 386.678 810.089L391.5 813.1L390.901 820.328L399.94 821.533H403.557L401.751 829.967H414.402L413.802 837.34C413.802 837.34 416.813 839.606 417.419 841.417C418.018 843.223 415.613 851.656 415.613 851.656L421.635 856.479L421.036 863.107C421.036 863.107 416.213 857.685 419.23 866.724C422.241 875.763 427.664 882.991 427.664 882.991L421.036 881.785L426.458 891.425L422.241 905.886L422.841 912.514L418.624 919.742L422.841 929.381L416.213 933.598L416.813 948.06L415.007 953.482C415.007 953.482 407.816 949.696 391.512 940.832C380.183 934.677 379.795 928.6 362.946 927.77C349.49 927.109 343.916 933.604 339.7 946.254C335.483 958.905 330.061 980.594 331.866 983.605C333.671 986.617 338.494 989.628 339.7 993.245C340.905 996.862 339.7 1002.88 337.288 1005.3C337.288 1005.3 333.95 1003.27 331.23 1002.77C328.51 1002.28 325.299 1006.73 322.33 1006.98C319.361 1007.23 310.71 1007.23 309.722 1005.74C308.735 1004.26 306.087 1001.29 304.197 1000.3C302.306 999.315 298.126 1001.11 298.126 1001.11C297.878 998.643 297.126 996.056 297.611 992.863C298.441 987.434 307.492 983.987 308.728 982.254C309.964 980.522 317.628 959.014 317.38 950.853C317.132 942.692 316.392 933.301 313.672 931.817C310.952 930.333 303.785 924.892 296.86 923.656C289.935 922.42 266.7 922.42 270.65 920.197C274.607 917.973 290.753 917.476 304.191 922.917C317.628 928.358 314.908 923.165 308.48 920.942C302.052 918.718 282.768 913.029 272.632 914.265C262.496 915.501 263.483 916.737 257.303 918.47C251.124 920.203 247.168 916.737 253.844 914.017C260.521 911.297 250.875 906.85 253.347 902.148C255.819 897.453 266.452 868.523 270.408 863.083C274.364 857.642 277.085 853.934 277.824 852.698C278.563 851.462 278.563 849.978 285.239 850.475C291.916 850.972 289.196 854.183 295.872 850.475C302.549 846.767 305.021 845.78 307.989 846.022C310.958 846.27 317.628 851.214 321.342 854.183C325.05 857.151 317.634 860.114 328.51 861.108C339.391 862.095 335.592 861.356 342.929 861.356C350.266 861.356 352.241 858.636 359.414 858.387C366.581 858.139 369.799 856.412 375.978 858.387C382.158 860.362 381.667 859.126 386.114 861.604C390.567 864.076 389.822 862.344 393.53 865.561C397.238 868.772 395.263 867.045 397.486 871.492C399.71 875.945 399.219 871.492 400.697 877.92C402.181 884.348 400.946 881.131 401.933 886.572C402.921 892.012 403.666 891.267 402.43 895.72C401.194 900.173 398.97 900.415 400.455 903.633C401.939 906.85 402.188 905.365 403.914 909.322C405.647 913.278 399.219 915.75 398.722 917.973C398.225 920.197 402.927 921.681 403.914 924.65C404.902 927.618 407.622 930.339 408.61 931.326C409.597 932.314 410.094 934.046 408.361 936.767C406.628 939.487 404.653 941.711 404.653 943.934C404.653 946.158 399.897 937.827 386.605 930.09C375.524 923.638 251.366 893.993 244.938 921.439C238.51 948.884 238.758 994.868 244.199 1007.23C249.639 1019.59 257.055 1038.63 262.496 1049.5C267.936 1060.38 268.675 1058.9 268.924 1064.58C269.172 1070.27 267.688 1079.91 275.352 1080.65C283.016 1081.39 288.208 1025.77 290.928 1021.81C293.649 1017.85 306.008 1023.79 305.517 1032.19C305.027 1040.6 300.574 1048.76 302.306 1049.75C304.039 1050.73 304.53 1036.15 308.238 1034.17C311.946 1032.19 324.553 1026.75 337.658 1035.16C350.763 1043.56 336.174 1051.72 334.689 1053.45C333.205 1055.19 312.194 1093.76 317.877 1126.64C323.566 1159.52 331.133 1285 325.838 1315.56C321.433 1340.97 293.897 1353.35 282.028 1316.51C270.16 1279.67 286.481 1248.52 286.972 1220.59C287.463 1192.65 295.375 1165.7 286.475 1129.85C286.475 1129.85 273.019 1079.4 275.431 1075.38C277.842 1071.36 290.292 1116.75 292.704 1154.1C295.115 1191.45 261.775 1286.64 277.042 1317.97C292.304 1349.3 290.698 1449.71 216.796 1466.58C142.894 1483.45 102.326 1488.67 141.288 1506.74C180.251 1524.82 275.037 1532.45 264.592 1561.37C254.147 1590.28 107.148 1620.41 66.9864 1662.58C26.8243 1704.75 31.6408 1740.9 88.2761 1741.71C144.911 1742.51 344.089 1775.79 346.5 2001" stroke="#31F565" stroke-width="2" stroke-miterlimit="10"/>
+						<g filter="url(#filter0_d)">
+						<path d="M479.835 630.103C479.835 629.166 480.485 628.355 481.4 628.151L507.581 622.316C508.427 622.128 509.298 622.506 509.739 623.252L519.994 640.642C520.313 641.182 520.867 641.542 521.49 641.613L580.512 648.331C581.394 648.431 582.237 647.938 582.581 647.12L589.358 631.024C589.731 630.14 590.679 629.644 591.618 629.844L611.871 634.154C612.815 634.354 613.481 635.2 613.455 636.164L607.547 852.287C607.52 853.273 606.796 854.091 605.82 854.236C599.186 855.219 574.818 859.321 567.5 867.5C559.99 875.894 556.383 902.633 563.922 913.92C564.932 915.432 564.261 917.667 562.444 917.573C544.559 916.647 491.458 907.93 481.466 906.272C480.502 906.112 479.835 905.285 479.835 904.308V630.103Z" fill="white"/>
+						</g>
+						<defs>
+						<filter id="filter0_d" x="463.835" y="606.268" width="165.62" height="327.308" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+						<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+						<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+						<feOffset/>
+						<feGaussianBlur stdDeviation="8"/>
+						<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.88 0 0 0 0 0.232941 0 0 0 1 0"/>
+						<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+						<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+						</filter>
+						</defs>
+					</svg>
+				</div>
+				<div class="svg-animated__mobile">
+					<img src="./img/svg-ref.svg" alt="RefereePro Svg">
+				</div>
+				<img class="ref__container__float" src="./img/box-1-green.svg" alt="RefereePro REF!">
+			</div>
+			<div class="ref__content flexbox align-justify">
+				<div class="ref__text">
+					<h4 class="ref__text__title">NO MÁS PAPEL.</h4>
+					<p class="ref__text__sub"><b>Referee Pro® REF!</b> es la herramienta que convierte al dispositivo móvil de tus árbitros en una libreta digital.</p>
+					<p class="ref__text__info">Facilita tu vida y la de tus árbitros antes, durante y después del partido. Con REF! minimiza las equivocaciones y ahorra tiempo valioso. Aquí da inicio el camino a digitalizar tu organización, en donde tus estadísticas son precisas, automáticas y siempre disponibles para todos.</p>
+					<div class="ref__text__movil">
+						<div class="ref__phone">
+							<img src="./img/smartphone.svg" alt="Smartphone">
+							<div class="ref__phone__text ref__phone__text--one flexbox align-middle">
+								<img src="./img/check.svg" alt="Check">
+								<p class="ref__phone__text__info ref__phone__text__info--custom">Registra goles, tarjetas, lesiones y cambios al
+									instante.</p>
+							</div>
+							<div class="ref__phone__text ref__phone__text--two flexbox align-middle">
+								<img src="./img/check.svg" alt="Check">
+								<p class="ref__phone__text__info">Firma de capitanes y delegados en la cédula digital del partido.</p>
+							</div>
+							<div class="ref__phone__text ref__phone__text--three flexbox align-middle">
+								<img src="./img/check.svg" alt="Check">
+								<p class="ref__phone__text__info">Crea y modifica las fichas de los partido a tu medida.</p>
+							</div>
+							<div class="ref__phone__text ref__phone__text--four flexbox align-middle">
+								<img src="./img/check.svg" alt="Check">
+								<p class="ref__phone__text__info">Reportes disciplinarios y evaluación de los equipos.</p>
+							</div>
+						</div>
+					</div>
+					<div class="ref__text__plat flexbox align-justify">
+						<div class="ref__text__plat--left">
+							<p class="ref__text__plat__info text-uppercase">Disponible  para</p>
+							<div class="flexbox align-justify">
+								<img src="./img/icon-android.svg" alt="Android">
+								<img src="./img/icon-ios.svg" alt="IOS">
+							</div>
+						</div>
+						<div class="ref__text__plat--right">
+							<p class="ref__text__plat__info text-uppercase">Pronto...</p>
+							<img src="./img/icon-watch-os.svg" alt="Watch OS">
+						</div>
+					</div>
+					<a href="#contact" class="btn-primary btn-demo">Reserva un demo</a>
+					<div class="ref__text__post">
+						<p class="ref__text__post__title text-uppercase">¿Eres árbitro?</p>
+						<p class="ref__text__post__info">Prueba <b>REF!</b> en un partido real y averigua cómo llevarlo a tu liga o torneo. <a href="#contact" class="ref__text__post__info__link btn-referee">Contáctanos.</a></p>
+					</div>
+				</div>
+				<div class="ref__phone">
+					<img src="./img/smartphone.svg" alt="Smartphone">
+					<div class="ref__phone__text ref__phone__text--one flexbox align-middle">
+						<img src="./img/check.svg" alt="Check">
+						<p class="ref__phone__text__info ref__phone__text__info--custom">Registra goles, tarjetas, lesiones y cambios al instante.</p>
+					</div>
+					<div class="ref__phone__text ref__phone__text--two flexbox align-middle">
+						<img src="./img/check.svg" alt="Check">
+						<p class="ref__phone__text__info">Firma de capitanes y delegados en la cédula digital del partido.</p>
+					</div>
+					<div class="ref__phone__text ref__phone__text--three flexbox align-middle">
+						<img src="./img/check.svg" alt="Check">
+						<p class="ref__phone__text__info">Crea y modifica las fichas de los partido a tu medida.</p>
+					</div>
+					<div class="ref__phone__text ref__phone__text--four flexbox align-middle">
+						<img src="./img/check.svg" alt="Check">
+						<p class="ref__phone__text__info">Reportes disciplinarios y evaluación de los equipos.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--Elemento intermedio de animacion de color fadein-->
+		<div class="section-ref-cm"><div class="section-ref-cm__inner"></div></div>
+
+		<section class="cm">
+			<div class="cm__container">
+				<div class="svg-animated__web">
+					<svg class="cm__container__grafic" width="100%" viewBox="0 0 580 1655" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path id="animation-svg2-path" d="M557.218 10C557.218 10 513.414 181.401 538.775 318.213C564.136 455.024 594.873 625.655 569.513 734.802C544.152 843.942 520.326 899.284 521.868 884.681C523.403 870.077 571.054 741.721 562.601 736.337C554.147 730.96 415.812 706.36 400.447 710.202C385.075 714.044 319.752 933.867 315.14 943.093C310.528 952.318 305.915 954.625 302.845 955.39C299.768 956.16 270.566 969.993 261.348 969.993C252.123 969.993 245.037 971.845 237.354 978.764C229.671 985.684 216.009 988.438 210.626 990.744C205.249 993.05 195.254 994.586 192.948 1000.73C190.642 1006.88 179.118 1025.33 183.724 1036.86C188.336 1048.39 199.86 1059.15 196.019 1063.76C192.177 1068.37 187.714 1073.75 182.642 1069.14C177.57 1064.52 173.728 1049.92 172.193 1042.24C170.658 1034.55 166.816 1013.03 176.034 1007.65C185.259 1002.27 200.625 993.044 190.636 993.815C180.647 994.586 176.805 1005.35 166.81 1007.65C156.821 1009.95 102.258 1028.4 77.6618 1060.68C53.0718 1092.97 69.979 1112.95 77.6618 1118.33C85.3447 1123.71 114.553 1138.32 132.225 1118.33C149.903 1098.34 154.509 1075.29 162.962 1075.29C171.416 1075.29 145.284 1117.56 132.989 1125.24C120.694 1132.93 82.7029 1143.69 64.8136 1108.33C46.9181 1072.98 88.4216 1037.62 94.5691 1032.24C100.717 1026.86 128.383 1019.17 133.76 1015.33C139.137 1011.49 140.679 1003.03 133.76 996.115C126.842 989.196 99.175 866.217 92.263 815.488C85.3447 764.76 77.6618 744.773 70.7436 744.773C63.8253 744.773 29.2463 771.673 11.5683 832.398C-6.10969 893.117 1.57936 1060.68 11.5683 1080.66C21.5572 1100.64 60.7546 1157.52 103.787 1144.45C146.82 1131.38 168.339 1112.94 150.667 1119.09C132.989 1125.24 92.263 1161.36 62.29 1118.32C32.3169 1075.27 75.3558 1031.46 97.6397 1018.4C119.924 1005.33 132.989 1006.1 110.706 886.962C88.4216 767.825 44.612 744.002 87.6508 741.696C130.69 739.389 146.826 740.925 150.667 734.777C154.509 728.628 163.733 703.264 166.039 697.88C168.345 692.503 179.105 695.574 185.253 704.029C191.4 712.484 190.629 730.164 198.318 737.077C206.001 743.996 219.838 756.293 229.827 760.135C239.816 763.977 242.893 767.054 242.893 772.431C242.893 777.809 234.439 783.752 238.28 808.066C242.122 832.379 252.882 870.811 255.188 896.946C257.494 923.081 259.8 975.345 258.264 979.187C256.729 983.029 246.734 905.401 246.734 905.401C246.734 905.401 236.745 847.753 232.133 827.773C227.521 807.786 232.133 778.58 225.215 775.509C218.296 772.431 210.613 777.815 202.16 767.825C193.706 757.835 182.176 748.609 179.105 747.838C176.028 747.067 159.892 783.963 158.357 776.28C156.821 768.596 160.663 723.245 165.275 714.79C169.887 706.335 176.805 700.187 181.411 690.961C186.023 681.736 192.942 662.52 190.636 651.765C188.33 641.004 188.33 634.855 183.717 631.778C179.105 628.701 166.81 617.946 163.733 607.949C160.656 597.959 154.509 587.59 158.357 578.171C162.198 568.753 166.039 563.369 170.652 563.369C175.264 563.369 182.947 573.359 186.788 581.814C190.629 590.269 196.777 609.485 190.629 614.098C184.482 618.71 176.028 607.178 177.564 584.121C177.564 584.121 179.422 574.584 175.04 562.667L173.579 560.478L175.767 558.775L173.094 557.805L172.852 554.883L174.07 552.695L171.155 550.749L174.561 546.858L167.755 544.427C167.755 544.427 165.567 541.263 166.779 540.293C167.997 539.317 168.725 538.104 168.725 538.104L165.318 531.54L163.13 528.624C163.13 528.624 160.942 528.866 161.67 527.163C162.397 525.46 164.1 521.81 164.1 521.81L163.124 518.646L168.234 510.863L168.961 506.001L167.742 499.194C167.742 499.194 171.876 502.843 173.337 499.194C174.798 495.545 174.555 492.138 174.555 492.138C174.555 492.138 172.125 487.276 173.094 487.276C174.064 487.276 180.392 485.573 180.392 485.573L181.362 480.463L185.495 476.329L192.059 477.056L193.035 470.249L196.926 469.03L200.575 467.327L203.739 465.139L204.715 460.762L209.824 459.544L209.339 454.434L213.715 446.893L219.552 443.243L220.528 439.352C220.528 439.352 227.092 441.783 227.825 441.298C228.553 440.813 231.716 438.867 231.716 438.867L235.123 441.783L238.771 439.109C238.771 439.109 241.935 436.921 242.905 436.921C243.881 436.921 247.766 439.837 247.766 439.837L254.572 435.945L265.027 435.218L273.779 431.326V433.514L278.889 432.296C278.889 432.296 283.507 432.296 283.75 433.023C283.992 433.75 287.641 434.484 287.641 434.484L294.447 433.266L299.799 433.508L300.526 438.618L308.066 438.861L313.418 442.51L320.224 443.971L324.358 443.001L325.085 447.378L333.837 449.081L336.268 451.269L339.674 454.918L342.347 460.514L349.644 461.483L353.778 466.102L355.723 470.964L361.56 472.91L364.966 476.074L365.209 482.154L371.53 485.318L375.906 487.507L378.337 492.859H374.203L380.767 497.721L385.386 501.855L381.252 506.474L382.47 510.608L379.797 510.365L383.689 518.634L377.852 516.445C377.852 516.445 380.767 521.307 380.767 522.04C380.767 522.768 381.01 528.12 379.064 528.363C377.118 528.605 377.118 528.605 377.118 528.605L376.634 532.012C376.634 532.012 374.688 536.146 373.961 536.146C373.234 536.146 372.015 536.874 372.5 538.819C372.985 540.765 374.203 541.984 373.961 542.711C373.718 543.438 370.554 544.657 370.07 545.384C369.585 546.112 366.906 553.41 365.694 549.033C364.475 544.657 367.397 540.032 366.421 534.443C365.445 528.848 365.203 527.635 365.203 527.635C365.203 527.635 366.172 519.852 359.608 517.906C353.044 515.96 352.802 516.93 349.153 513.287C345.504 509.644 342.347 505.504 342.347 505.504C342.347 505.504 340.159 500.151 335.292 497.236C330.431 494.32 327.509 491.156 327.509 491.156L324.346 486.294C324.346 486.294 314.133 489.216 311.945 489.459C309.757 489.701 304.647 486.543 302.702 485.324C300.756 484.106 297.108 482.894 297.108 482.894C297.108 482.894 295.075 484.84 292.079 483.136C289.083 481.433 285.434 479.972 285.434 479.972C285.434 479.972 278.628 478.753 277.894 478.753C277.167 478.753 275.464 477.535 273.518 477.05C271.573 476.565 265.494 478.753 264.033 474.134C262.572 469.515 258.439 470 258.439 470L243.116 478.268C243.116 478.268 235.092 482.887 231.928 485.324C228.764 487.755 226.333 489.701 222.685 491.162C219.036 492.623 217.333 492.623 216.121 496.999C214.902 501.376 215.145 504.783 211.987 506.486C208.823 508.19 205.666 509.402 204.205 513.051C202.744 516.7 199.344 522.295 200.799 525.696C202.259 529.103 200.071 532.752 199.58 533.722C199.095 534.698 198.362 536.395 198.604 537.371C198.847 538.347 200.065 541.505 199.332 542.723C198.604 543.942 197.871 546.858 197.871 546.858C197.871 546.858 197.871 554.883 199.089 555.859C200.308 556.829 198.604 558.048 198.604 558.048L195.932 560.236C195.932 560.236 196.416 566.558 196.907 568.019C197.392 569.48 197.392 569.48 197.392 569.48C197.392 569.48 194.477 574.945 194.228 578.171C193.986 581.398 192.283 587.963 193.744 588.454C195.204 588.939 210.035 555.132 253.565 552.459C297.095 549.786 293.689 572.16 294.422 586.999C295.15 601.838 292.066 573.621 292.066 573.621C292.066 573.621 291.258 547.84 247.244 555.866C203.229 563.891 215.63 574.105 233.867 566.08C252.105 558.054 275.694 550.755 285.664 564.619C294.043 576.269 292.135 610.567 290.401 623.18L288.586 627.613C288.586 627.613 278.876 630.504 277.248 633.718C274.277 639.574 276.85 642.763 276.85 642.763C276.85 642.763 284.036 641.01 285.583 643.242L289.313 647.699C292.595 648.669 298.717 648.868 301.328 649.253C302.671 649.452 305.145 644.124 305.145 644.124L311.591 645.797C311.591 645.797 314.953 641.078 314.245 638.579C313.536 636.086 308.825 632.53 308.197 632.561L306.189 627.75L313.629 593.309C320.193 568.747 323.6 563.152 335.516 561.448C347.431 559.745 356.674 575.069 356.674 575.069C356.674 575.069 361.05 587.471 359.838 598.662C358.62 609.852 342.813 645.604 341.358 642.44C339.898 639.275 349.383 627.849 352.056 614.713C354.729 601.577 358.378 584.313 355.22 584.065C352.056 583.822 340.874 606.681 341.843 614.713C342.813 622.739 343.304 640.979 337.467 651.199C331.631 661.413 326.279 681.114 325.794 687.194C325.309 693.274 319.23 701.542 314.363 706.652C309.496 711.762 288.101 730.972 277.639 733.409C267.178 735.846 254.777 740.465 246.025 737.786C237.273 735.106 210.035 713.951 207.847 708.841C205.659 703.73 201.041 694.25 206.629 699.111C212.223 703.973 216.599 707.137 219.272 710.059C221.945 712.981 232.406 722.952 238.243 725.141C244.08 727.329 257.214 734.143 264.748 731.463C272.287 728.79 279.094 720.764 279.094 716.139C279.094 711.52 277.633 701.548 277.876 698.869C278.118 696.196 281.524 690.843 283.955 688.17C286.385 685.497 286.385 682.332 284.44 682.09C282.494 681.847 270.093 677.956 265.96 676.252C261.826 674.549 256.474 669.93 256.717 667.984C256.959 666.038 262.311 671.391 271.063 674.307C279.815 677.222 283.464 679.168 288.573 680.144C293.683 681.114 295.38 683.308 297.574 680.871C299.762 678.441 299.277 669.924 291.01 669.196C282.743 668.469 267.048 668.227 263.772 668.712C260.496 669.196 298.792 682.575 294.416 684.036C290.04 685.497 269.608 692.062 275.688 708.598C281.767 725.135 314.841 702.761 313.138 712.247C311.435 721.734 310.223 739.247 305.841 741.192C301.459 743.138 278.36 753.352 271.554 759.675C264.748 765.997 253.317 779.133 251.613 783.025C249.91 786.916 245.049 804.429 244.316 811.236C243.589 818.043 243.346 828.991 245.534 832.883C247.722 836.774 244.565 807.587 253.074 795.185C261.584 782.782 289.549 759.675 297.822 758.214C306.096 756.753 306.332 763.809 307.308 771.35C308.277 778.891 304.635 792.996 306.089 792.754C307.55 792.511 312.411 778.648 316.545 767.458C320.678 756.268 338.916 755.783 334.54 747.03C330.164 738.277 316.545 719.546 316.787 715.169C317.029 710.793 323.842 716.873 326.757 717.6C329.673 718.327 344.267 726.353 355.456 730.493C366.645 734.627 375.397 735.846 377.585 736.331C379.773 736.816 407.98 735.361 415.763 741.683C423.545 748.006 406.52 757.493 402.628 749.952C398.737 742.411 406.52 734.627 411.871 736.088C417.223 737.549 419.896 748.491 409.441 748.491C398.986 748.491 395.822 738.034 380.015 740.707C364.208 743.381 331.736 738.544 329.673 747.763C327.609 756.983 299.028 757.977 284.44 775.732C269.851 793.487 184.488 880.801 175.979 899.047C167.469 917.293 211.484 897.829 266.929 866.211C322.375 834.592 337.94 832.162 317.272 860.131C296.604 888.1 175.009 968.606 185.222 981.5C195.434 994.393 198.598 997.551 192.761 1012.15C186.925 1026.74 189.846 1040.85 191.543 1044.01C193.246 1047.17 200.544 1058.11 200.786 1062.49C201.029 1066.87 203.459 1062.01 200.786 1052.28C198.113 1042.55 202.489 1039.38 203.217 1046.92C203.944 1054.47 202.247 1070.52 204.435 1074.41C206.623 1078.3 211.241 1084.14 220.969 1083.65C230.697 1083.17 233.127 1080.49 233.127 1075.14C233.127 1069.79 228.751 1038.17 230.455 1035.98C232.158 1033.79 233.37 1075.87 235.564 1076.85C237.752 1077.82 255.505 1082.44 259.396 1076.36C263.287 1070.28 264.014 1055.44 262.802 1046.93C261.584 1038.42 262.075 1030.64 263.772 1031.36C265.469 1032.09 266.445 1053.01 265.717 1057.87C264.99 1062.73 263.529 1072.46 266.202 1073.68C268.875 1074.9 281.282 1077.33 285.173 1074.41C289.064 1071.49 292.713 1049.6 291.01 1039.38C289.307 1029.17 284.688 1016.52 284.688 1015.55C284.688 1014.58 288.915 1020.66 289.965 1026.01C291.016 1031.36 293.689 1039.87 293.204 1044.49C292.719 1049.11 294.528 1050.47 299.631 1050.96C304.741 1051.44 306.096 1054.66 312.902 1044.49C316.657 1038.87 304.691 1033.85 298.811 1025.15C293.347 1017.07 288.573 1015.8 284.694 1009.95C281.282 1004.82 276.893 994.107 292.495 983.408C303.106 976.135 266.942 992.199 263.778 993.896C260.614 995.599 259.16 1001.44 253.323 1002.16C247.486 1002.89 240.922 999 236.54 1002.89C232.164 1006.78 231.679 1008.73 227.539 1008.73C223.406 1008.73 215.866 1006.54 211.732 1012.62C207.599 1018.7 201.52 1028.43 205.411 1026C209.302 1023.57 209.302 1014.81 219.03 1012.14C228.758 1009.46 232.891 1001.92 243.837 1003.38C254.784 1004.84 268.639 992.97 277.397 988.351C286.155 983.732 301.962 978.087 302.932 977.359C303.902 976.632 307.793 966.412 309.987 960.823C312.181 955.234 314.605 956.204 311.448 963.254C308.284 970.31 302.938 979.548 305.368 982.227C307.799 984.9 328.231 993.417 360.087 997.551C391.943 1001.69 450.795 1003.63 452.741 1005.58C454.686 1007.52 459.796 1010.93 463.687 1013.6C467.578 1016.28 474.142 1021.14 474.876 1028.68C475.603 1036.23 471.712 1048.39 469.524 1039.87C467.336 1031.36 472.688 1018.96 469.524 1012.15C466.36 1005.34 461.984 1013.12 456.881 1011.42C451.771 1009.72 455.911 1002.42 451.286 997.8C446.668 993.181 436.449 989.289 427.94 986.61C419.43 983.937 418.696 983.203 418.696 979.803C418.696 976.396 421.369 971.292 424.291 971.049C427.206 970.807 447.395 973.48 453.232 974.456C459.069 975.426 463.687 974.456 466.124 972.268C468.56 970.08 468.554 966.188 461.014 962.296C453.474 958.405 437.667 954.998 434.019 952.325C430.37 949.652 410.187 946.487 412.375 939.431C414.563 932.375 415.048 930.678 423.321 930.429C431.588 930.187 446.91 930.429 451.771 932.86C456.632 935.291 468.063 937.237 472.439 939.425C476.815 941.613 485.082 947.208 486.3 944.778C487.519 942.347 488.973 937.722 479.737 932.618C470.5 927.514 456.147 918.512 452.014 916.324C447.88 914.135 436.207 907.571 438.152 901.484C440.098 895.398 442.043 891.998 445.207 891.998C448.371 891.998 457.608 894.428 464.663 897.108C471.718 899.781 471.469 899.296 479.252 903.188C487.034 907.079 486.549 905.134 492.143 909.51C497.738 913.887 501.871 917.051 504.302 916.317C506.732 915.584 498.707 906.346 498.707 906.346C498.707 906.346 492.871 900.508 489.707 898.32C486.543 896.132 476.088 892.725 474.385 891.022C472.682 889.318 470.493 879.832 471.221 877.886C471.948 875.94 474.385 869.375 478.027 870.83C481.67 872.284 498.21 879.098 503.804 880.074C509.399 881.044 518.642 885.427 523.745 889.803C528.854 894.18 536.637 910.965 540.279 915.826C543.922 920.688 542.952 931.393 539.794 933.824C536.637 936.254 532.988 935.77 532.739 937.715C532.497 939.661 520.581 942.577 514.744 946.226C508.908 949.875 508.423 952.306 505.744 956.198C503.071 960.089 496.016 958.144 492.125 963.981C488.234 969.819 484.827 980.766 484.827 980.766C484.827 980.766 486.046 984.415 488.476 977.602C490.906 970.795 494.313 962.278 500.877 961.065C507.441 959.847 510.12 954.009 512.308 951.336C514.496 948.663 529.576 939.419 531.03 942.092C532.491 944.765 526.169 961.55 521.787 969.091C517.411 976.632 513.52 989.519 514.49 998.036C515.459 1006.55 511.326 1033.55 516.92 1036.22C522.514 1038.89 518.138 1016.52 518.381 1009.22C518.623 1001.92 517.896 996.818 520.326 993.896C522.757 990.974 524.945 1003.14 529.569 1005.81C534.188 1008.49 545.861 1025.76 553.643 1033.54C561.426 1041.32 561.426 1058.84 562.644 1071.72C563.862 1084.62 568.238 1091.42 569.699 1098.96C571.16 1106.51 568.238 1128.39 565.808 1133.99C563.378 1139.58 542.946 1153.21 536.382 1154.18C529.818 1155.15 500.392 1153.93 490.422 1151.01C480.451 1148.1 462.214 1150.53 459.535 1139.09C456.856 1127.66 453.213 1117.45 456.371 1112.34C459.535 1107.23 455.153 1128.15 479.96 1130.58C504.768 1133.01 522.52 1121.33 527.624 1114.04C532.733 1106.74 542.461 1092.64 545.376 1082.18C548.292 1071.72 546.346 1059.31 542.946 1068.56C539.54 1077.8 541 1090.93 532 1100.42C522.999 1109.91 515.223 1124.98 499.167 1125.23C483.112 1125.48 471.202 1124.5 467.796 1121.1C464.389 1117.69 456.607 1111.61 456.365 1105.53C456.122 1099.45 456.607 1097.5 462.444 1105.53C468.281 1113.56 466.335 1116.96 475.336 1119.88C484.336 1122.79 488.47 1126.44 495.761 1123.04C503.059 1119.64 508.162 1118.91 514.49 1113.8C520.811 1108.69 522.999 1104.07 527.624 1099.45C532.242 1094.83 532.976 1098.23 534.188 1087.05C535.406 1075.86 538.564 1075.13 535.406 1066.62C532.242 1058.11 532.242 1045.46 528.842 1050.08C525.436 1054.7 529.569 1050.81 529.327 1059.81C529.085 1068.81 532.733 1072.95 532 1078.05C531.266 1083.16 532.969 1085.59 528.836 1090.7C524.702 1095.81 521.781 1101.64 516.435 1105.78C511.083 1109.91 509.138 1113.56 503.301 1115.51C497.464 1117.45 494.3 1117.94 490.9 1117.94C487.5 1117.94 487.736 1122.31 480.93 1116.72C474.124 1111.12 473.148 1110.64 470.475 1107.97C467.802 1105.29 459.044 1101.89 459.044 1097.02C459.044 1092.16 467.796 1063.45 460.989 1046.67C454.183 1029.88 456.371 1016.51 456.371 1016.51C456.371 1016.51 461.48 985.864 451.753 986.355C442.025 986.84 304.871 1040.84 339.885 1056.65C374.906 1072.46 429.866 1046.92 431.321 1065.89C432.776 1084.87 378.791 1104.81 305.835 1118.43C232.879 1132.05 169.408 1145.67 172.815 1152.97C176.221 1160.27 300.974 1144.7 309.726 1159.78C318.478 1174.86 165.275 1172.67 146.789 1191.88C136.365 1202.72 172.442 1206.9 216.264 1211.06C219.185 1211.34 222.144 1211.62 225.115 1211.9C244.509 1214.01 263.902 1217.31 283.29 1219.36C287.168 1219.77 291.047 1220.12 294.944 1220.42C311.261 1222.3 330.81 1223.63 348.917 1226.72C352.541 1227.33 356.103 1228.02 359.546 1228.79C370.592 1230.6 384.783 1234.7 391.844 1243.07C393.609 1245.17 394.933 1247.53 395.667 1250.16C399.067 1272.91 375.931 1276.71 357.116 1280.8C353.355 1281.62 349.762 1282.45 346.592 1283.45C316.327 1286.85 286.739 1294.08 258.221 1305.51C254.131 1307.14 250.066 1308.85 245.895 1310.66C241.848 1312.33 237.615 1313.96 233.277 1315.61C228.938 1317.26 224.494 1318.91 220.018 1320.62C212.08 1324.62 203.273 1328.41 194.446 1332.48C191.506 1333.83 188.56 1335.22 185.644 1336.65C171.298 1343.13 158.17 1352.32 147.665 1366.76C139.79 1378.58 148.977 1389.09 160.911 1391.4C164.025 1392.49 167.189 1393.49 170.378 1394.4C183.133 1398.01 196.298 1400.1 209.544 1401.12C214.225 1401.64 218.881 1402.17 223.53 1402.74C246.765 1405.56 269.969 1409.48 292.191 1417.22C296.567 1418.69 300.862 1420.27 305.101 1422.04C309.347 1423.8 313.536 1425.77 317.67 1427.94C321.132 1430.41 324.414 1433.24 327.534 1436.36C336.721 1444.24 343.292 1456.05 340.662 1467.87C328.846 1505.95 317.029 1542.72 316.706 1581.74C316.538 1585.75 316.439 1589.75 316.402 1593.75C316.296 1605.76 316.768 1617.75 317.782 1629.65C317.719 1632.49 317.695 1635.29 317.701 1638.05C317.719 1643.56 317.887 1648.9 318.229 1654" stroke="#31F565" stroke-width="2" stroke-miterlimit="10"/>
+					<circle opacity="0.24" cx="557" cy="10" r="10" fill="#00CC36"/>
+					<circle cx="557" cy="10" r="4" fill="#00CC36"/>
+					</svg>
+				</div>		
+				<div class="svg-animated__mobile">
+					<img src="./img/svg-cm.svg" alt="CM">
+				</div>				
+				<img class="cm__container__float" src="./img/box-2-green.svg" alt="CM">
+			</div>
+			<div class="grid-container">
+				<div class="cm__text">
+					<h4 class="cm__text__title cm__text__title--desktop text-uppercase">Digitaliza tu organización</h4>
+					<h4 class="cm__text__title cm__text__title--movil text-uppercase">Digitaliza tu orga-<br>nización</h4>
+					
+					<p class="cm__text__sub"><b>Referee Pro® CM</b> (Competition Manager) es la plataforma que trabaja por ti.</p>
+					<p class="cm__text__info">Toma control de tus operaciones de manera automatizada y ahorra días de trabajo. <b>CM</b> recibe los datos directamente de parte de <b>REF!</b> para reducir el trabajo de transcripción y gestión administrativa al mínimo. Es hora de pensar en qué haras con todo ese tiempo libre… 🍺 🏖 </p>
+					<div class="cm__text__movil">
+						<div class="cm__laptop">
+							<img src="./img/phone-green.svg" alt="Laptop">
+							<div class="cm__laptop__text cm__laptop__text--one flexbox align-middle">
+								<img src="./img/check.svg" alt="Check">
+								<p class="cm__laptop__text__info">Generación automática de calendarios de juegos y estadísticas.</p>
+							</div>
+							<div class="cm__laptop__text cm__laptop__text--two flexbox align-middle">
+								<img src="./img/check.svg" alt="Check">
+								<p class="cm__laptop__text__info">Plataforma digital de registros para equipos y cuerpo técnico.</p>
+							</div>
+							<div class="cm__laptop__text cm__laptop__text--three flexbox align-middle">
+								<img src="./img/check.svg" alt="Check">
+								<p class="cm__laptop__text__info">Actas arbitrales en formato digital. NO MÁS PAPEL®</p>
+							</div>
+							<div class="cm__laptop__text cm__laptop__text--four flexbox align-middle">
+								<img src="./img/check.svg" alt="Check">
+								<p class="cm__laptop__text__info">Control y reportes <br>disciplinarios.</p>
+							</div>
+						</div>
+					</div>
+					<a href="#contact" class="btn-secondary text-uppercase btn-demo">RESERVA UN DEMO</a>
+				</div>
+				<div class="cm__laptop">
+					<img src="./img/laptop.svg" alt="Laptop">
+					<div class="cm__laptop__text cm__laptop__text--one flexbox align-middle">
+						<img src="./img/check.svg" alt="Check">
+						<p class="cm__laptop__text__info">Generación automática de calendarios de juegos y estadísticas.</p>
+					</div>
+					<div class="cm__laptop__text cm__laptop__text--two flexbox align-middle">
+						<img src="./img/check.svg" alt="Check">
+						<p class="cm__laptop__text__info">Plataforma digital de registros para equipos y cuerpo técnico.</p>
+					</div>
+					<div class="cm__laptop__text cm__laptop__text--three flexbox align-middle">
+						<img src="./img/check.svg" alt="Check">
+						<p class="cm__laptop__text__info">Actas arbitrales en formato digital. NO MÁS PAPEL®</p>
+					</div>
+					<div class="cm__laptop__text cm__laptop__text--four flexbox align-middle">
+						<img src="./img/check.svg" alt="Check">
+						<p class="cm__laptop__text__info">Control y reportes <br>disciplinarios.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--Elemento intermedio de animacion de color fadein-->
+		<div class="section-cm-fans"><div class="section-cm-fans__inner"></div></div>
+		
+		<section class="fans">
+			<div class="fans__container">
+				<div class="svg-animated__web">
+					<svg class="fans__container__grafic" width="100%" viewBox="0 0 1228 1589" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path id="animation-svg3-path" d="M792 1C736 332 421 432 238 466C55 500 7.45245 762.953 94.7424 868.171C117 895 204.76 893.625 198.199 982.684C191.638 1071.74 259.738 1036.45 272.07 1032.32C284.402 1028.19 288.047 1037.66 283.127 1062.69C278.206 1087.72 251.112 1135.77 255.243 1155.88C259.374 1175.99 260.163 1194.03 254.817 1205.51C249.472 1216.99 256.883 1227.26 251.962 1230.97C247.042 1234.67 251.112 1244.09 242.911 1252.72C234.709 1261.34 231.854 1272.4 209.681 1272.82C187.507 1273.25 181.371 1265.84 183.437 1261.34C185.502 1256.85 195.769 1235.1 201.905 1235.46C208.04 1235.89 224.503 1252.72 231.064 1252.72C237.625 1252.72 247.042 1243.3 245.037 1239.17C242.971 1235.04 240.116 1251.08 232.34 1246.15C224.564 1241.23 204.456 1232.61 205.246 1230.97C206.096 1229.33 219.583 1212.5 220.008 1207.15C220.433 1201.81 217.153 1187.05 224.503 1189.11C231.854 1191.18 228.634 1219.91 236.836 1218.27C245.037 1216.63 224.503 1187.11 228.634 1166.94C232.765 1146.83 235.621 1131.22 232.765 1107.4C229.91 1083.59 223.349 1023.26 233.98 1009.72C244.672 996.17 261.075 1013.42 254.514 1021.62C247.953 1029.83 223.349 1015.49 232.34 1003.95C241.331 992.404 261.864 979.343 269.276 959.234C276.687 939.126 302.931 891.499 330.815 883.723C358.699 875.947 372.672 874.307 375.527 898.485C378.382 922.724 369.756 949.393 350.073 962.515C330.39 975.637 301.23 987.969 297.524 1000.67C293.819 1013.36 274.926 1034.75 258.098 1034.32C241.27 1033.9 278.206 975.212 266.299 955.529C254.392 935.846 246.616 908.326 243.7 878.377C243.7 878.377 252.327 895.63 269.58 900.55C286.832 905.471 293.393 902.616 306.09 894.415C318.787 886.213 326.198 875.947 340.96 875.521C355.723 875.096 365.564 881.657 371.76 877.162C377.896 872.666 377.896 870.601 365.625 861.549C353.293 852.497 348.372 848.002 348.797 843.081C349.222 838.161 338.105 841.016 318.848 858.269C299.529 875.521 290.113 888.218 274.926 879.592C259.738 870.965 291.753 873.456 296.674 863.615C301.595 853.773 340.596 843.506 339.745 838.586C338.895 833.665 327.049 820.908 324.558 813.982C322.067 806.996 321.703 791.383 326.623 783.607C331.544 775.831 336.89 753.233 336.89 753.233C336.89 753.233 341.021 724.498 338.105 712.166C335.25 699.834 329.539 754.144 342.601 755.237C359.671 756.756 379.536 766.719 385.672 764.654C391.808 762.588 404.14 741.69 401.285 736.344C398.429 730.998 388.588 763.439 392.233 766.719C395.939 770 408.271 772.49 408.271 772.49C408.271 772.49 404.565 783.972 408.271 792.173C411.977 800.374 421.393 809.851 421.818 823.338C422.243 836.885 421.393 850.857 423.458 859.848C423.458 859.848 420.968 865.619 420.968 870.905C420.968 876.19 423.458 882.386 423.458 882.386C423.458 882.386 421.818 895.083 423.458 900.064C425.099 905.046 429.594 909.481 431.66 908.691C433.725 907.84 430.809 898.849 431.66 895.144C432.51 891.438 431.66 876.615 434.15 873.76C436.641 870.905 440.711 886.092 438.646 888.157C436.58 890.223 424.673 872.18 420.178 881.596C415.682 891.013 417.323 897.209 419.327 899.639C421.393 902.13 436.459 903.345 439.192 902.494C441.926 901.644 451.768 891.802 451.768 888.522C451.768 885.241 449.702 863.068 446.847 856.932C446.847 856.932 447.272 847.516 445.632 841.745C443.992 835.974 443.141 807.664 446.057 791.262C448.912 774.859 444.417 757.181 436.216 750.62C428.015 744.059 434.15 762.831 439.496 764.168C444.842 765.504 431.295 739.564 404.201 735.008C377.106 730.512 376.924 721.4 369.33 713.685C360.643 704.876 347.521 695.642 309.735 697.708C309.735 697.708 309.978 722.19 299.894 739.625C299.894 739.625 304.997 746.064 307.67 745.639C310.343 745.214 317.207 742.298 317.207 742.298C317.207 742.298 332.03 772.673 311.861 781.481C311.861 781.481 297.889 779.902 291.024 764.411C291.024 764.411 301.898 751.106 301.898 748.433C301.898 745.76 314.291 767.509 301.412 764.836C295.459 763.621 307.427 778.565 311.861 775.042C316.296 771.518 315.628 757.303 302.384 745.578C289.08 733.853 291.632 749.709 291.632 749.709C287.561 753.111 282.641 755.541 276.627 756.331C252.205 759.611 230.821 724.073 226.144 708.096C226.144 708.096 239.326 720.185 250.99 725.835C250.99 725.835 308.702 741.994 284.767 695.156C262.776 652.145 294.608 580.886 250.93 586.536C207.251 592.125 207.372 628.331 207.494 635.318C207.615 641.939 212.171 650.627 212.171 650.627C221.405 651.416 229.303 657.309 230.578 665.024C231.854 672.739 226.265 680.029 228.391 681.609C230.518 683.188 236.532 681.548 237.079 683.735C237.625 685.922 236.289 691.876 236.289 691.876C236.289 691.876 240.906 690.721 240.967 691.025L237.018 694.548C237.018 694.548 238.84 708.521 244.794 708.825C250.747 709.128 280.089 693.212 289.202 674.137C298.314 655.061 292.178 640.907 291.753 651.599C291.328 662.29 311.618 647.711 324.193 638.173C336.769 628.635 354.204 644.491 359.246 654.879C364.288 665.267 382.938 659.375 382.938 659.375C379.172 674.44 358.578 681.244 343.816 673.651C329.053 665.996 318.848 675.595 307.913 670.37C296.978 665.146 302.141 644.855 302.202 648.136C302.263 651.416 302.384 667.09 299.651 664.903C296.917 662.716 299.286 649.533 299.286 649.533C299.286 649.533 303.356 610.471 292.178 597.045C281.001 583.62 246.799 578.821 223.774 590.059C200.75 601.298 202.087 642.122 202.087 642.122C201.297 629.364 211.928 624.687 211.928 624.687C209.559 628.271 208.283 636.776 208.283 636.776C209.316 625.78 225.293 619.462 225.293 619.462C219.4 622.5 217.578 630.64 217.578 630.64C220.494 619.341 232.826 618.186 232.826 618.186C232.826 618.186 244.733 611.747 250.93 610.593C260.285 608.831 272.192 620.009 278.145 626.813C281.487 630.64 272.678 636.593 271.584 639.752C270.491 642.911 279.3 653.725 280.029 655.061C280.757 656.398 282.58 653.968 282.641 647.65C282.702 641.332 289.566 638.477 292.057 640.967C294.548 643.458 295.459 656.519 292.664 662.716C289.931 668.912 282.641 663.202 282.641 663.202C282.641 663.202 283.188 675.412 276.87 687.684C268.547 703.722 252.448 711.68 238.658 711.194C233.859 711.012 225.901 691.633 221.77 680.515C221.77 680.515 220.676 675.655 222.62 671.524C224.564 667.333 221.891 658.585 215.755 658.16C209.681 657.734 222.256 687.38 222.256 687.38C223.531 694.488 224.078 701.535 221.344 701.109C203.484 698.437 193.825 714.657 187.689 728.204C181.554 741.751 177.848 756.513 179.913 759.004C181.979 761.495 198.806 774.981 208.648 773.341C218.489 771.7 182.768 760.219 178.698 764.289C174.567 768.42 178.273 794.239 174.203 799.585C170.072 804.93 154.884 816.837 157.375 837.735C159.866 858.694 178.698 857.418 186.899 854.138C195.101 850.857 196.741 829.899 201.236 825.828C205.732 821.758 216.424 812.706 218.064 807.786C219.704 802.865 228.331 796.729 230.396 790.958C232.462 785.187 230.821 772.49 232.887 771.64C234.952 770.789 232.887 775.346 227.116 780.691C221.344 786.037 232.462 784.822 236.167 783.182C239.873 781.542 248.074 773.341 245.584 769.635C243.093 765.929 241.088 770.06 240.663 764.289C240.238 758.518 240.238 758.518 240.238 758.518C240.238 758.518 240.663 756.027 237.382 750.317C234.102 744.545 231.247 743.33 225.05 743.33C218.854 743.33 211.078 742.48 209.073 748.676C207.008 754.812 225.05 749.527 229.181 740.05C233.312 730.634 221.041 731.849 219.34 740.9C217.639 749.952 205.793 756.513 205.003 760.583C204.213 764.654 197.774 788.528 205.853 801.225C213.933 813.921 219.4 806.145 208.709 795.454C198.017 784.762 197.227 793.388 192.731 798.309C188.236 803.23 173.413 799.524 167.277 812.646C161.142 825.768 154.155 848.792 175.479 851.647C196.802 854.502 225.111 792.963 229.242 804.019C233.373 815.076 240.724 814.711 243.579 825.342C246.434 836.034 245.219 830.263 241.513 844.661C237.808 858.998 235.378 868.049 236.167 870.54C237.018 873.031 240.298 880.807 240.298 880.807C240.298 880.807 237.808 867.199 241.939 868.049C246.07 868.9 246.859 886.153 262.047 892.288C277.234 898.424 290.356 902.13 312.104 885.302C333.853 868.475 289.141 904.985 284.22 914.826C279.3 924.668 269.276 943.804 275.594 938.215C281.912 932.626 311.315 971.87 315.385 988.698C319.516 1005.53 327.717 1017.43 334.703 1018.65C341.689 1019.86 354.811 1028.06 361.798 1026.42C368.784 1024.78 394.238 1024.36 403.654 1030.92C413.07 1037.48 414.346 1042.4 414.346 1042.4C414.346 1042.4 415.561 1032.56 419.267 1030.49C422.972 1028.43 425.402 1039.55 429.959 1035.41C434.454 1031.28 432.814 1011.18 427.103 1013.24C421.393 1015.31 400.859 1010.39 394.663 1000.54C388.527 990.703 378.686 977.581 367.143 977.581C355.601 977.581 350.741 983.717 353.171 991.128C355.662 998.539 351.531 960.753 344.119 960.753C336.708 960.753 348.25 1029.7 355.176 1031.77C362.162 1033.83 387.191 980.861 391.322 987.847C395.453 994.834 418.416 1046.11 418.841 1050.66C419.267 1055.16 424.613 1070.35 437.734 1077.33C450.856 1084.32 448.426 1054.37 445.936 1048.17C443.445 1042.04 436.884 1039.12 438.524 1033.41C438.524 1033.41 431.599 990.824 447.88 996.96C464.161 1003.1 504.195 1061.42 477.708 1106.19C451.221 1150.96 488.764 1220.88 546.112 1243.36C580.132 1256.73 637.054 1239.72 629.217 1221C621.381 1202.29 640.152 1177.87 639.059 1156.06C638.026 1134.25 629.156 1091.24 639.727 1066.88C650.358 1042.34 639.848 1023.14 638.816 1006.01C637.783 988.88 709.164 1002.31 699.808 1010.08C690.453 1017.86 637.115 1018.4 638.694 994.469C639.727 978.188 647.867 969.38 647.442 950.851C647.199 940.827 671.803 926.43 679.882 914.341C679.882 914.341 687.172 902.92 680.429 909.116C673.686 915.373 663.237 932.748 645.194 940.706C631.89 946.538 603.642 920.051 596.352 918.471C589.062 916.892 633.834 940.402 626.058 939.855C618.282 939.309 613.058 939.977 618.768 941.01C624.479 942.042 643.19 945.687 641.61 951.398C640.031 957.108 635.839 969.623 632.133 976.73C628.549 983.716 627.273 1006.44 624.175 1018.89C624.175 1018.89 612.147 1047.81 618.464 1050.18C624.782 1052.55 621.745 1024.9 629.764 1027.27C637.783 1029.64 632.741 1041.85 626.787 1051.63C620.834 1061.48 630.979 1064.7 629.156 1083.16C627.395 1101.57 610.749 1114.69 608.016 1115.3C605.343 1115.91 595.805 1114.09 593.132 1095.37C590.459 1076.66 600.847 1057.89 602.67 1046.29C604.431 1034.69 590.763 1018.95 601.455 1016.82C612.147 1014.76 627.941 1021.02 616.946 1024.54C605.95 1028.06 548.542 1009.41 553.584 1006.13C558.687 1002.79 612.754 1012.39 616.338 1016.82C619.922 1021.26 624.357 1040.34 607.408 1051.63C590.459 1062.93 563.608 1037.66 556.5 1018.34C550.668 1002.49 565.43 934.813 565.491 934.752C567.86 931.168 568.771 923.757 568.771 923.757C568.225 917.986 567.313 921.509 565.612 915.252C565.612 915.252 564.154 915.495 567.799 909.784C571.444 904.074 599.997 907.415 637.418 899.092C674.84 890.77 696.285 889.615 712.019 885.667C718.641 884.026 719.127 864.404 713.902 861.792C710.257 859.97 706.308 837.067 708.921 831.539C713.598 821.697 705.276 814.893 710.5 802.987C710.5 802.987 714.874 792.963 690.635 794.664C666.396 796.365 649.082 799.159 654.975 810.945C660.868 822.73 687.172 819.632 694.098 803.351C701.023 787.07 713.841 726.807 695.131 722.311C676.42 717.816 650.115 722.979 649.386 731.667C648.718 740.354 646.592 822.426 641.063 825.16C635.535 827.955 626.848 830.02 625.815 825.828C624.783 821.697 634.806 817.141 632.741 803.29C630.675 789.439 636.872 737.134 632.072 736.101C627.212 735.069 606.436 753.779 605.403 743.695C604.371 733.611 635.171 721.886 641.428 719.82C647.685 717.755 690.939 709.797 701.023 715.993C711.047 722.25 709.71 765.2 705.519 776.621C701.327 788.042 715.056 796.608 719.066 769.149C719.734 764.593 720.585 759.976 721.253 755.359L724.594 730.269C734.618 687.319 738.931 664.903 721.921 654.818C721.374 654.515 726.842 715.082 733.464 710.586C752.417 697.647 766.815 696.796 780.727 699.651C794.638 702.507 794.092 667.393 790.325 653.3C786.559 639.266 772.282 693.273 791.115 702.385C792.634 703.114 794.152 703.661 795.489 704.39C802.839 708.399 819.728 714.778 819.728 714.778C825.013 722.129 823.555 720.853 824.588 731.302C826.35 749.345 823.737 758.457 823.251 763.621C822.765 768.785 821.49 775.649 818.027 779.476C814.503 783.304 803.265 794.846 801.685 799.706C800.045 804.566 800.713 810.762 804.48 812.099C808.246 813.435 812.316 798.856 816.569 795.697C820.821 792.538 828.84 783 829.083 787.374C829.266 791.748 818.148 805.538 816.63 804.141C794.031 783.547 812.377 800.253 813.106 776.196C813.228 771.397 811.648 774.009 806.302 777.532C800.956 781.056 795.307 788.893 795.185 793.692C795.064 798.491 813.167 817.141 819.424 816.473C825.621 815.805 838.257 792.052 840.869 784.579C843.481 777.107 843.481 777.107 843.481 777.107C840.14 776.439 826.532 780.205 819.606 777.411C812.681 774.616 819.606 760.28 821.672 755.42C823.677 750.56 845 760.34 845 760.34C845.972 750.803 847.308 739.442 848.888 732.153C851.439 720.246 855.266 690.053 839.593 685.558C835.766 684.464 799.681 660.286 799.681 660.286C789.596 656.216 740.207 630.458 744.824 641.15C749.441 651.842 751.142 654.636 752.478 648.986C753.815 643.337 728.3 626.57 731.823 638.355C726.295 620.009 691.425 624.808 706.187 633.981L697.135 630.397C697.135 630.397 680.551 650.141 680.854 675.898C681.097 701.596 649.811 697.647 649.811 697.647C638.876 695.763 634.867 675.534 633.53 665.875C632.194 656.216 625.147 648.014 622.231 641.818C619.254 635.621 617.918 601.359 617.918 601.359C617.918 601.359 619.558 595.952 619.558 595.162C619.558 594.372 621.988 590.302 621.988 590.302L622.231 585.746L625.208 577.363L629.278 574.69L629.035 572.26L626.605 570.619L625.512 566.306L629.278 561.203L634.381 556.89L638.451 556.1L641.975 556.343L644.162 557.983C644.162 557.983 647.381 559.624 649.933 560.17C652.484 560.717 652.241 559.927 652.241 559.927L656.129 557.74L660.078 555.553L663.602 554.217L668.461 554.764L674.962 558.287L677.938 559.077C677.938 559.077 682.252 562.843 682.798 563.633C683.345 564.423 686.018 566.063 686.018 566.063L689.542 569.04L690.088 572.26L688.205 574.69L686.018 580.339C686.018 580.339 687.112 583.012 687.355 583.863C687.598 584.713 688.691 586.536 688.691 586.536C688.691 586.536 692.458 590.849 691.121 595.162C689.785 599.475 688.327 637.383 689.542 633.981C690.756 630.579 692.822 617.275 692.822 617.275C697.257 621.345 701.084 610.775 701.084 601.055C701.084 591.335 695.677 595.101 695.677 595.101L696.771 590.242L700.294 586.475C700.294 586.475 701.934 584.592 703.332 583.498C704.729 582.405 703.332 580.825 703.332 580.825L701.934 577.606C701.934 577.606 701.934 575.722 701.934 572.746C701.934 569.769 701.934 570.073 701.934 569.222C701.934 568.372 702.177 564.119 702.177 564.119C702.177 564.119 701.388 559.016 702.724 557.376C704.061 555.736 702.724 554.703 702.724 554.703V548.507V541.763L698.958 539.333L695.738 539.09L692.518 535.02L689.845 531.254C689.845 531.254 687.658 530.464 686.869 530.464C686.079 530.464 684.682 528.034 684.682 528.034L682.495 525.847C682.495 525.847 680.672 525.847 677.149 525.847C673.625 525.847 672.289 525.057 672.289 525.057C672.289 525.057 670.405 522.384 669.312 520.38C668.218 518.375 665.788 521.534 664.452 520.744C663.115 519.954 659.349 520.744 659.349 520.744H655.279H649.994L648.779 522.931L641.489 524.814C641.489 524.814 641.489 524.814 640.699 525.361C639.909 525.908 636.386 529.188 636.386 529.188L630.736 531.314L629.096 533.501H622.109C622.109 533.501 622.11 539.455 619.437 537.815C616.764 536.174 617.796 539.151 618.1 540.245C618.343 541.338 617.007 544.801 617.007 544.801C617.007 544.801 614.577 547.474 614.577 548.324C614.577 549.175 614.82 551.848 614.82 551.848L613.179 558.348L613.422 566.731C613.422 566.731 613.179 569.951 613.179 570.802C613.179 571.652 613.179 572.138 613.179 572.138L613.422 575.115L613.179 576.451L614.516 581.008L613.969 584.227L616.703 590.728C607.287 583.498 606.983 606.583 610.203 612.78C613.422 618.976 616.156 615.21 616.156 615.21C616.156 615.21 618.586 628.939 621.867 634.103C625.147 639.206 642.035 657.066 645.559 659.253C649.082 661.44 652.606 664.113 652.181 652.996C651.755 641.879 664.209 647.589 664.999 643.033C665.788 638.477 652.181 639.813 652.181 639.813C659.045 644.916 667.672 637.383 668.765 636.411C669.859 635.439 664.452 626.327 664.452 626.327C664.452 626.327 667.672 633.86 665.242 634.71C662.812 635.561 650.115 637.14 648.536 636.168C646.895 635.196 648.293 628.939 648.293 628.939L645.316 634.71C645.316 634.71 631.04 637.93 627.516 634.71C625.026 632.402 619.072 596.802 627.516 593.157C638.208 588.601 650.723 595.587 651.755 595.83C652.849 596.073 651.998 618.49 651.998 618.49L649.933 620.92C649.933 620.92 652.241 625.476 656.312 626.023C660.382 626.57 663.298 620.92 663.298 620.92L661.111 617.579C661.111 617.579 659.774 603.424 661.111 596.924C662.447 590.424 678.971 592.428 682.13 592.368C689.663 592.125 685.107 618.49 685.107 618.49C687.415 649.533 654.914 663.02 654.914 663.02C654.914 663.02 644.83 678.936 656.008 685.558C667.186 692.179 686.383 657.734 686.383 657.734C696.406 659.8 702.603 656.155 702.603 663.445C702.603 670.735 702.056 709.189 662.569 717.998C623.082 726.807 628.974 626.631 615.792 632.645C606.801 636.715 581.711 639.084 581.711 639.084C574.786 638.294 562.21 647.893 545.018 659.01C531.775 667.576 509.115 711.558 512.335 721.4C515.19 730.209 551.579 750.56 560.752 747.765C569.926 744.971 512.76 702.932 516.223 713.502C519.686 724.134 511.424 753.111 505.896 762.953C499.152 774.859 498.241 786.159 500.003 792.173C500.732 794.664 500.367 804.201 516.284 808.697C524.06 810.884 549.757 811.309 564.094 798.37C578.43 785.43 619.923 767.63 631.951 767.144C643.979 766.658 629.521 766.78 639.666 754.326C648.657 743.27 646.349 757.121 640.638 760.766C632.923 765.686 637.904 769.453 641.549 772.065C645.134 774.677 654.854 773.827 661.475 769.392C668.097 764.957 661.961 774.981 665.91 774.373C669.919 773.766 667.064 776.56 673.625 770.729C680.125 764.897 697.743 748.433 694.098 742.601C690.453 736.709 675.934 753.597 681.826 755.116C687.719 756.635 686.2 776.5 683.163 775.163C674.354 771.336 694.948 763.378 691.607 756.149C688.266 748.859 695.191 739.382 685.714 734.704C676.237 730.026 673.564 728.69 656.615 733.55C644.344 737.073 635.778 738.956 626.666 741.326C598.113 748.676 617.614 769.574 620.348 772.49C623.082 775.406 635.414 773.28 636.75 768.42C638.026 763.499 615.731 746.368 615.731 746.368C599.45 753.233 572.659 766.051 564.215 769.149C556.318 772.065 551.215 763.682 534.569 780.752C517.924 797.823 552.612 770.303 558.93 747.218C558.93 747.218 571.566 729.662 576.122 717.755C579.646 708.46 574.057 673.225 573.874 672.982C571.019 670.127 571.141 747.461 571.687 750.863C572.234 754.265 573.267 799.888 574.421 804.991C575.575 810.094 576.122 850.857 574.421 854.259C572.72 857.661 563.668 892.653 567.07 894.718C567.07 894.718 567.313 903.709 571.019 907.901C574.725 912.093 558.808 1022.96 566.402 1005.89C573.935 988.819 576.001 931.35 574.846 922.724C573.692 914.097 584.08 912.336 615.184 915.799C646.288 919.261 676.298 900.793 661.9 910.635C647.503 920.416 632.498 922.724 621.563 922.177C610.628 921.63 640.577 934.874 652.12 928.495C663.662 922.177 646.774 998.722 646.956 1004.01C647.138 1009.29 688.387 1013.85 693.673 1008.62C698.958 1003.4 709.832 922.724 706.916 896.298C704.061 869.872 709.893 875.096 709.893 875.096C714.327 874.003 718.398 922.42 716.514 939.491C713.416 967.739 705.519 981.955 705.519 992.343C705.519 1002.73 702.724 1025.09 700.112 1030.25C697.5 1035.48 671.56 1059.35 659.592 1061.42C647.624 1063.48 682.981 1041.67 690.271 1046.35C697.561 1051.03 695.738 1085.84 686.504 1099.87C677.27 1113.9 658.559 1180.91 662.751 1202.72C666.882 1224.53 676.237 1247.43 676.784 1260.37C677.331 1273.37 669.008 1241.17 664.816 1238.01C660.685 1234.92 640.395 1234.37 634.685 1239.59C628.974 1244.82 640.395 1263.47 635.717 1266.63C631.04 1269.73 626.909 1258.3 625.876 1264.02C624.843 1269.73 624.297 1277.5 628.974 1280.66C628.974 1280.66 632.984 1286.01 638.33 1300.46C641.732 1309.58 645.377 1318.93 645.377 1329.32C645.377 1363.83 617.432 1391.77 582.926 1391.77C548.42 1391.77 520.476 1363.83 520.476 1329.32C520.476 1294.82 548.42 1266.87 582.926 1266.87C599.511 1266.87 614.637 1273.37 625.815 1283.88C625.815 1283.88 660.139 1324.95 626.119 1369.11C592.039 1413.28 524.607 1369.78 529.831 1346.51C535.055 1323.25 626.18 1329.62 669.919 1345.72C676.541 1348.15 689.724 1325.31 690.757 1320.15C691.789 1314.98 682.434 1297.31 680.368 1295.73C678.303 1294.15 647.624 1292.63 643.979 1288.44C640.334 1284.31 697.5 1293.66 703.757 1294.69C703.757 1294.69 779.755 1308.06 788.26 1289.17C796.765 1270.21 757.277 1223.68 768.03 1173.13C768.03 1173.13 775.381 1136.81 804.905 1133.95C834.429 1131.09 852.593 1149.26 868.449 1133.95C884.365 1118.64 895.118 1069.25 926.343 1064.15C926.343 1064.15 960.971 1072.65 962.672 1083.47C964.373 1094.28 918.385 1077.82 927.498 1059.65C936.61 1041.49 953.012 1004.61 950.218 1000.06C947.424 995.502 931.507 967.739 933.755 956.379C936.003 945.019 936.671 992.161 962.732 1006.32C988.794 1020.53 1037.58 1039.79 1050.09 1040.94C1062.6 1042.1 1077.91 1038.09 1086.96 1031.89C1096.02 1025.63 1106.28 1019.38 1109.08 1021.69C1111.93 1023.93 1085.81 1030.19 1073.9 1032.44C1062 1034.69 1103.97 1019.38 1104.52 1015.43C1105.07 1011.48 1057.44 987.604 1043.23 976.244C1029.01 964.884 1030.71 958.627 1030.71 958.627C1030.71 958.627 1000.64 964.277 981.322 963.183C962.003 962.029 934.241 948.968 931.386 950.122C928.53 951.276 924.035 961.482 924.035 956.926C924.035 952.37 925.189 939.309 935.395 929.71C945.601 920.051 958.662 895.387 959.209 882.447C959.756 869.568 963.765 863.311 960.363 848.002C956.961 832.693 971.723 794.664 976.826 794.117C981.929 793.57 978.527 823.034 956.961 824.188C935.395 825.342 922.82 821.94 918.264 815.136C913.707 808.332 910.913 787.313 916.016 787.313C921.119 787.313 922.273 814.59 911.46 813.982C900.646 813.375 884.791 810.033 876.833 815.683C868.874 821.333 852.411 854.867 845.06 866.774C837.71 878.68 847.308 880.381 845.06 891.742C842.813 903.102 838.257 912.761 834.855 913.308C831.453 913.854 838.256 897.999 837.102 895.144C835.948 892.288 831.999 913.308 828.051 915.009C824.102 916.71 819.546 913.855 819.546 908.205C819.546 902.555 815.597 898.546 813.288 894.597C811.041 890.648 807.031 894.05 811.041 880.381C814.989 866.774 825.256 863.918 833.761 848.609C842.266 833.301 854.78 795.271 871.244 792.416C887.707 789.561 913.221 790.715 923.427 783.364C933.633 776.014 952.041 780.995 959.027 779.294C966.013 777.593 974.639 769.149 1003.56 779.902C1003.56 779.902 1003.37 786.949 1006.96 795.454C1006.96 795.454 1009.27 801.771 1013.7 801.771C1018.14 801.771 1001.61 785.612 1010.48 779.112C1019.35 772.612 1022.57 760.583 1022.57 758.214C1022.57 755.845 1016.07 741.751 1016.07 741.751L1016.37 736.769L1015.22 730.026L1015.52 727.353L1017.29 722.919L1016.68 718.18V714.657L1016.37 712.895V708.156V704.329L1017.53 699.591V695.156L1020.75 692.483L1023.12 687.502V684.586L1024.88 682.824L1028.4 680.151L1031.62 676.02C1031.62 676.02 1033.69 675.109 1034.54 674.562C1035.45 673.954 1037.45 672.496 1037.45 672.496L1041.58 668.669L1041.89 665.146L1046.32 664.842L1051.06 663.08C1051.06 663.08 1056.35 662.776 1057.26 662.776C1058.17 662.776 1061.09 662.776 1061.09 662.776H1065.22L1068.74 661.865C1068.74 661.865 1070.2 661.865 1071.66 661.258C1073.11 660.65 1075.48 659.496 1076.64 659.496C1077.79 659.496 1079.86 660.104 1079.86 660.104C1079.86 660.104 1082.23 661.562 1082.77 663.02C1083.38 664.478 1083.38 664.781 1085.45 665.085C1087.51 665.389 1091.64 664.477 1091.64 664.477C1091.64 664.477 1096.08 665.632 1097.54 665.389C1098.99 665.085 1103.43 665.996 1104.28 665.996C1105.19 665.996 1105.19 665.996 1105.19 665.996L1106.34 668.365L1110.48 671.038L1113.69 671.342H1119.59L1121.05 672.8C1121.05 672.8 1121.65 672.8 1122.81 675.473C1123.96 678.146 1125.72 681.366 1125.72 681.366L1128.09 688.413V689.871L1126.63 691.025C1126.63 691.025 1123.96 689.871 1123.96 690.721C1123.96 691.572 1121.59 690.114 1125.12 695.156C1128.64 700.137 1129.55 701.353 1130.4 702.203C1131.31 703.114 1131.31 703.114 1131.31 703.114V706.334C1127.79 706.03 1127.79 706.03 1127.79 706.03C1127.79 706.03 1126.03 708.096 1126.63 708.946C1127.24 709.797 1127.55 711.619 1127.79 713.077C1128.09 714.535 1128.09 714.839 1127.79 716.297C1127.48 717.755 1126.88 719.517 1126.88 719.517L1124.2 717.451L1125.36 723.648L1124.2 726.017L1122.44 730.148L1120.38 731.606L1119.77 729.237L1118.31 727.475L1117.4 735.433L1115.94 741.751C1115.94 741.751 1111.57 736.283 1103 737.195C1094.5 738.106 1091.22 747.765 1091.52 752.504C1091.83 757.242 1091.76 769.028 1091.76 769.028L1086.6 770.729L1082.71 767.509L1083.81 765.14C1083.81 765.14 1078.89 763.682 1076.82 774.252C1076.82 774.252 1075.6 777.289 1081.74 778.808L1077.37 780.448L1071.17 795.15C1071.17 795.15 1042.01 790.168 1033.2 770.425C1024.39 750.681 1016.19 802.561 1023.36 812.038C1032.96 824.735 1009.33 805.174 1009.33 805.174C1009.33 805.174 998.271 811.552 992.196 825.646C986.121 839.74 988.49 874.671 985.149 906.2C981.808 937.729 959.634 953.22 957.933 953.524C956.232 953.888 947.849 954.921 950.218 958.566C952.587 962.211 970.691 966.281 983.448 963.122C996.145 959.963 1007.63 916.953 1015.04 899.457C1022.45 882.022 1023.42 830.992 1022.45 827.286C1021.42 823.581 1029.43 818.295 1029.43 818.295C1056.1 830.81 1069.71 802.379 1069.71 802.379C1069.71 802.379 1035.69 781.36 1032.23 759.794C1032.23 759.794 1020.87 755.845 1020.32 744.485C1019.78 733.125 1025.43 728.022 1027.67 728.568C1029.92 729.115 1033.32 744.485 1033.32 744.485L1041.28 735.433L1041.83 721.825H1049.79L1053.73 702.507C1053.73 702.507 1066.25 705.362 1070.75 699.651C1075.3 694.002 1080.4 703.6 1085.51 708.703C1090.61 713.806 1099.12 714.96 1100.82 713.806C1102.52 712.652 1105.19 709.857 1108.96 709.25C1112.72 708.703 1113.27 707.002 1114.97 708.703C1116.67 710.404 1114.97 719.456 1114.97 719.456C1114.97 719.456 1115.94 737.073 1115.7 741.569C1115.46 746.064 1103.61 754.63 1103.61 756.878C1103.61 759.125 1108.17 783 1076.39 800.01C1076.39 800.01 1067.89 827.833 1072.99 836.338C1078.1 844.843 1071.84 810.216 1080.95 803.412C1090.06 796.608 1128.03 841.441 1135.44 850.493C1142.85 859.544 1109.93 866.409 1109.93 866.409C1109.93 866.409 1129.25 844.296 1142.85 859.605C1156.46 874.914 1158.16 878.924 1162.17 868.11C1166.12 857.357 1165.57 844.296 1165.57 844.296C1165.57 844.296 1159.32 832.936 1159.32 824.978C1159.32 817.02 1171.83 794.907 1176.94 794.907C1182.04 794.907 1174.08 806.267 1174.08 806.267C1174.08 806.267 1167.82 820.482 1170.13 822.183C1172.38 823.884 1184.89 826.74 1183.74 834.09C1182.58 841.441 1199.66 830.688 1199.66 823.884C1199.66 817.08 1179.24 836.399 1182.65 841.502C1186.05 846.605 1162.23 815.379 1180.94 804.627C1180.94 804.627 1188.9 804.627 1191.15 810.276C1191.15 810.276 1199.66 811.431 1199.66 817.627C1199.66 817.627 1206.46 826.679 1202.51 832.389C1198.56 838.1 1185.5 848.852 1184.89 855.11C1184.35 861.367 1180.94 902.798 1166.73 905.593C1152.51 908.448 1123.05 880.078 1113.39 870.419C1103.73 860.759 1093.53 843.75 1087.27 843.203C1081.01 842.656 1077.61 844.904 1073.05 856.811C1068.5 868.718 1052.64 914.705 1048.63 920.962C1044.68 927.219 1039.64 960.024 1033.99 965.431C1028.34 970.838 946.634 960.51 949.367 978.249C953.924 1008.32 1000.28 1004.31 996.874 1020.77C993.472 1037.24 960.302 1087.36 944.993 1091.3C929.685 1095.25 922.152 1096.22 908.544 1119.49C894.936 1142.76 884.122 1156.37 890.38 1168.88C896.637 1181.4 907.39 1183.64 908.544 1189.29C909.698 1194.94 906.843 1198.34 902.287 1197.25C897.73 1196.16 876.772 1198.95 870.515 1194.4C864.257 1189.84 862.01 1173.98 853.505 1166.57C845 1159.22 841.598 1148.41 852.35 1146.71C863.103 1145.01 868.814 1136.5 872.762 1135.95C876.711 1135.41 863.103 1148.47 865.412 1151.26C867.659 1154.12 869.36 1163.78 872.762 1163.78C876.164 1163.78 876.164 1139.96 881.814 1140.51C887.464 1141.06 895.422 1150.72 895.422 1150.72C895.422 1150.72 888.618 1156.97 894.875 1166.63C901.132 1176.29 887.889 1088.39 918.567 1079.88C949.185 1071.38 956.293 985.782 972.209 1003.22C989.705 1022.47 1105.43 1016.76 1102.03 1030.98C1098.63 1045.2 1063.45 1078.06 1058.9 1109.83C1054.34 1141.6 1050.94 1164.32 1056.65 1174.53C1062.3 1184.74 1082.17 1213.11 1079.37 1221.07C1076.58 1229.02 1074.27 1229.57 1071.41 1229.02C1068.56 1228.48 1042.5 1222.77 1036.24 1215.42C1029.98 1208.06 1031.14 1192.15 1023.73 1189.9C1016.37 1187.65 1003.86 1178.54 1005.56 1172.89C1007.26 1167.24 1018.62 1148.47 1022.57 1148.47C1026.52 1148.47 1012.91 1167.18 1015.22 1170.58C1017.47 1173.98 1030.53 1175.14 1033.93 1170.04C1037.33 1164.93 1039.58 1150.72 1043.59 1150.72C1047.6 1150.72 1062.3 1158.07 1062.3 1161.47C1062.3 1164.87 1071.96 1192.09 1077.61 1196.1C1083.26 1200.05 1025.97 1149.56 1025.97 1145.01C1025.97 1140.45 1037.33 1113.23 1037.33 1099.63C1037.33 1086.02 1035.09 1034.38 1079.31 1041.73C1123.6 1049.08 1002.16 1162.02 1002.16 1186.98C1002.16 1314.41 903.626 1374.84 813 1420C722.374 1465.16 659.592 1501 631 1588" stroke="#31F565" stroke-width="2" stroke-miterlimit="10"/>
+					</svg>
+					
+				</div>
+				<div class="svg-animated__mobile">
+					<img src="./img/svg-fans.svg" alt="REF">
+				</div>
+				<img class="fans__container__float" src="./img/box-3-green.svg" alt="Fans">
+			</div>
+			<div class="grid-container">
+				<div class="fans__text text-center">
+					<h4 class="fans__text__title fans__text__title--desktop text-uppercase">ESTADÍSTICAS AL MOMENTO</h4>
+					<h4 class="fans__text__title fans__text__title--movil text-uppercase">ESTADÍSTI-<br>CAS AL MOMENTO</h4>
+					
+					<p class="fans__text__sub"><b>FANS</b> es la ventana que conecta a la comunidad con la información de tu competición.</p>
+					<p class="fans__text__info">Un espacio para que jugadores, delegados, familiares y seguidores consulten los datos oficiales al instante. Ofrece una experiencia única garantizando información inmediata, clara, transparente y sin errores.</p>
+					<a href="#contact" class="btn-primary btn-primary__large btn-demo">RESERVA UN DEMO</a>
+				</div>
+				<div class="fans__devices">
+					<img src="./img/tablet.svg" alt="Tablet" class="fans__devices__one">
+					<img src="./img/phone.svg" alt="Phone" class="fans__devices__two">
+					<div class="fans__devices__box fans__devices__box--one flexbox align-middle">
+						<img src="./img/check.svg" alt="Check">
+						<p class="fans__devices__box__text">Fotografías de tus partidos.</p>
+					</div>
+					<div class="fans__devices__box fans__devices__box--two flexbox align-middle">
+						<img src="./img/check.svg" alt="Check">
+						<p class="fans__devices__box__text">El minuto-a-minuto de todos tus partidos.</p>
+					</div>
+					<div class="fans__devices__box fans__devices__box--three flexbox align-middle">
+						<img src="./img/check.svg" alt="Check">
+						<p class="fans__devices__box__text">Sección de Jugador Más Valioso</p>
+					</div>
+					<div class="fans__devices__box fans__devices__box--four flexbox align-middle">
+							<img src="./img/check.svg" alt="Check">
+							<p class="fans__devices__box__text">Calendario de juegos y <br>mucho más.</p>
+						</div>
+				</div>
+				<div class="fans__movil">
+					<div class="cm__laptop">
+						<img src="./img/phone-purple.svg" alt="Phone">
+						<div class="cm__laptop__text cm__laptop__text--one flexbox align-middle">
+							<img src="./img/check.svg" alt="Check">
+							<p class="cm__laptop__text__info">Sección de Jugador Más Valioso</p>
+						</div>
+						<div class="cm__laptop__text cm__laptop__text--two flexbox align-middle">
+							<img src="./img/check.svg" alt="Check">
+							<p class="cm__laptop__text__info">Calendario de juegos y <br>mucho más.</p>
+						</div>
+						<div class="cm__laptop__text cm__laptop__text--three flexbox align-middle">
+							<img src="./img/check.svg" alt="Check">
+							<p class="cm__laptop__text__info">Fotografías de tus partidos.</p>
+						</div>
+						<div class="cm__laptop__text cm__laptop__text--four flexbox align-middle">
+							<img src="./img/check.svg" alt="Check">
+							<p class="cm__laptop__text__info">El minuto-a-minuto de todos tus partidos.</p>
+						</div>
+					</div>
+				</div>
+				<div class="fans__search text-center" id="fans_search">
+					<p class="fans__search__title">ENCUENTRA TU LIGA O TORNEO</p>
+					<p class="fans__search__text">Si ya participas en una competición Referee Pro®, encuentra tus estadísticas aquí:</p>
+
+					<div class="fans__search__select">
+						<select name="league">
+							<option></option>
+						   <option value="1" data-src="./img/selector/logo-1.jpg">Liga CECAFF</option>
+						   <option value="2" data-src="./img/selector/logo-2.jpg">Liga CECAFF Caribe Mexicano</option>
+						   <option value="3" data-src="./img/selector/logo-3.jpg">Liga CECAFF Cumbres</option>
+						   <option value="4" data-src="./img/selector/logo-1.jpg">Liga CECAFF Futbol 11</option>
+						   <option value="5" data-src="./img/selector/logo-2.jpg">Liga CECAFF San Pedro</option>
+						   <option value="6" data-src="./img/selector/logo-3.jpg">Liga CECAFF Valle Alto</option>
+						   <option value="7" data-src="./img/selector/logo-1.jpg">Otra liga</option>
+						</select>
+					</div>
+
+					<p class="fans__search__bottom">¿Tu liga o torneo aún no tiene Referee Pro®? <a href="#contact" class="btn-member"><span>Contáctanos para llevarlo a tu liga.</span></a></p>
+				</div>
+			</div>
+			<img src="./img/fans-footer.svg" alt="Fans" class="fans__footer">
+		</section>
+
+		<section class="stats" id="why">
+			<div class="grid-container">
+				<div class="stats__text text-center">
+					<h3 class="stats__text__title">PORQUÉ REFEREE PRO®</h3>
+					<p class="stats__text__sub"><b>7</b> años, <b>4</b> países y más de <b>100</b> organizaciones nos respaldan. 😎</p>
+				</div>
+			</div>
+			<div class="grid-container expanded">
+				<div class="stats__icons stats__icons--desktop stats__icons--top flexbox align-justify align-middle">
+					<a href="http://cecaffsanpedro.refereepro.com/"><img src="./img/clients/cliente19.jpg" alt="CECAFF San Pedro"></a>
+					<a href="http://ligapremiumo2.refereepro.com/"><img src="./img/clients/cliente2.jpg" alt="Cliente"></a>
+					<a href="http://www.ligaumh.com/mod/soccer/index.aspx"><img src="./img/clients/cliente3.jpg" alt="Liga UMH"></a>
+					<a href="http://scoolgames.refereepro.com/"><img src="./img/clients/cliente4.jpg" alt="school games"></a>
+					<a href="http://cecaff11.refereepro.com/"><img src="./img/clients/cliente1.jpg" alt="CECAFF 11"></a>
+					<a href="http://ligacecaff.com/"><img src="./img/clients/cliente5.jpg" alt="CECAFF"></a>
+					<a href="http://ligalasjuntas.refereepro.com/"><img src="./img/clients/cliente6.jpg" alt="Liga las juntas"></a>
+					<a href="https://web.asdeporte.com/"><img src="./img/clients/cliente7.jpg" alt="ASDeporte"></a>
+				</div>
+				<div class="stats__icons stats__icons--desktop stats__icons--bottom flexbox align-justify align-middle">
+					<a href="http://copatigres2018.refereepro.com/"><img src="./img/clients/cliente8.jpg" alt="Torneo Internacional de academias Tigres"></a>
+					<a href="http://jetsports.refereepro.com/"><img src="./img/clients/cliente9.jpg" alt="Jetsports marketing"></a>
+					<a href="http://fu7bolxtremo.refereepro.com/"><img src="./img/clients/cliente34.jpg" alt="fu7bolxtremo"></a>
+					<a href="http://www.atlasfc.com.mx/"><img src="./img/clients/cliente11.jpg" alt="Atlas FC"></a>
+					<a href="http://deportivoarenapremier.refereepro.com/"><img src="./img/clients/cliente12.jpg" alt="Deportivo Arena Premier"></a>
+					<a href="http://internationalcup.refereepro.com/"><img src="./img/clients/cliente13.jpg" alt="International CUP"></a>
+					<a href="http://cecaffcumbres.refereepro.com/"><img src="./img/clients/cliente14.jpg" alt="CECAFF Cumbres"></a>
+					<a href="http://cecaffvallealto.refereepro.com/"><img src="./img/clients/cliente15.jpg" alt="CECAFF Valle Alto"></a>
+				</div>
+				<div class="stats__icons stats__icons--movil">
+					<a href="http://cecaffsanpedro.refereepro.com/"><img src="./img/clients/cliente19.jpg" alt="CECAFF San Pedro"></a>
+					<a href="http://ligapremiumo2.refereepro.com/"><img src="./img/clients/cliente2.jpg" alt="Liga Premium 02"></a>
+					<a href="http://www.ligaumh.com/mod/soccer/index.aspx"><img src="./img/clients/cliente3.jpg" alt="Liga UMH"></a>
+					<a href="http://scoolgames.refereepro.com/"><img src="./img/clients/cliente4.jpg" alt="school games"></a>
+					<a href="http://cecaff11.refereepro.com/"><img src="./img/clients/cliente1.jpg" alt="CECAFF 11"></a>
+					<a href="http://ligacecaff.com/"><img src="./img/clients/cliente5.jpg" alt="CECAFF"></a>
+					<a href="http://ligalasjuntas.refereepro.com/"><img src="./img/clients/cliente6.jpg" alt="Liga las juntas"></a>
+					<a href="https://web.asdeporte.com/"><img src="./img/clients/cliente7.jpg" alt="ASDeporte"></a>
+				</div>
+			</div>
+			<div class="grid-container">
+				<div class="stats__info">
+					<p class="stats__info__title text-center">Junto a ellos hemos logrado:</p>
+					<div class="flexbox align-justify">
+						<div class="stats__info__box text-center">
+							<img src="./img/stats1.svg" alt="Stats">
+							<p class="stats__info__box__top">Más de</p>
+							<p class="stats__info__box__title">25 MIL</p>
+							<p class="stats__info__box__bottom">partidos levantados.</p>
+							<a href="" class="stats__info__box__link">En 3 países y 12 estados mexicanos</a>
+						</div>
+						<div class="stats__info__box text-center">
+							<img src="./img/stats2.svg" alt="Stats">
+							<p class="stats__info__box__top">Más de</p>
+							<p class="stats__info__box__title">1.2 MIL</p>
+							<p class="stats__info__box__bottom">torneos digitalizados.</p>
+							<a href="" class="stats__info__box__link">43% Corta duración / 57% Larga duración</a>
+						</div>
+						<div class="stats__info__box text-center">
+							<img src="./img/stats3.svg" alt="Stats">
+							<p class="stats__info__box__top">Más de</p>
+							<p class="stats__info__box__title">120 MIL</p>
+							<p class="stats__info__box__bottom">jugadores registrados.</p>
+							<a href="" class="stats__info__box__link">28% Mujeres / 72% Hombres</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="grid-container expanded">
+				<div class="stats__testimonial">
+					<div class="owl-carousel">
+						<div class="stats__testimonial__item">
+							<img src="./img/quote.svg" alt="" class="stats__testimonial__item__quote">
+							<p class="stats__testimonial__item__text">Se acabó la espera a que los árbitros juntaran los informes arbitrales, pasarlos a la computadora y subirlos a la Web.</p>
+							<div class="stats__testimonial__item__avatar flexbox">
+								<img src="./img/avatar1.svg" alt="">
+								<div class="stats__testimonial__item__avatar__content flexbox align-center-middle">
+									<p class="stats__testimonial__item__avatar__name">Jaime García</p>
+									<p class="stats__testimonial__item__avatar__info">Presidente <a href="#" class="stats__testimonial__item__link" target="_blank">Liga CECAFF</a>, Monterrey MX</p>
+								</div>
+							</div>
+						</div>
+						<div class="stats__testimonial__item">
+							<img src="./img/quote.svg" alt="" class="stats__testimonial__item__quote">
+							<p class="stats__testimonial__item__text">Referee Pro® me dió el tiempo libre que necesitaba para emprender otro negocio que tenía muchos años queriendo hacer.</p>
+							<div class="stats__testimonial__item__avatar flexbox">
+								<img src="./img/avatar2.svg" alt="">
+								<div class="stats__testimonial__item__avatar__content flexbox align-center-middle">
+									<p class="stats__testimonial__item__avatar__name">David Alejandro Gamboa</p>
+									<p class="stats__testimonial__item__avatar__info">Presidente <a href="#" class="stats__testimonial__item__link" target="_blank">Liga Supermanzana 95</a>, Cancún MX</p>
+								</div>
+							</div>
+						</div>
+						<div class="stats__testimonial__item">
+							<img src="./img/quote.svg" alt="" class="stats__testimonial__item__quote">
+							<p class="stats__testimonial__item__text">La liga se convirtió en un generador de experiencias. Nos mostramos con mejor calidad en organización gracias a RP®.</p>
+							<div class="stats__testimonial__item__avatar flexbox">
+								<img src="./img/avatar3.svg" alt="">
+								<div class="stats__testimonial__item__avatar__content flexbox align-center-middle">
+									<p class="stats__testimonial__item__avatar__name">Victoria Martínez</p>
+									<p class="stats__testimonial__item__avatar__info">Directora <a href="#" class="stats__testimonial__item__link" target="_blank">Liga Supermanzana 95</a>, Celaya MX</p>
+								</div>
+							</div>
+						</div>
+						<div class="stats__testimonial__item">
+							<img src="./img/quote.svg" alt="" class="stats__testimonial__item__quote">
+							<p class="stats__testimonial__item__text">Aprovechen Referee Pro® para mejorar su calidad de arbitraje; ahorrarán tiempo, garantizando seguridad y concentración.</p>
+							<div class="stats__testimonial__item__avatar flexbox">
+								<img src="./img/avatar4.svg" alt="">
+								<div class="stats__testimonial__item__avatar__content flexbox align-center-middle">
+									<p class="stats__testimonial__item__avatar__name">Mario Rubio</p>
+									<p class="stats__testimonial__item__avatar__info">Árbitro Mundialista, España ‘82</p>
+								</div>
+							</div>
+						</div>
+						<div class="stats__testimonial__item">
+							<img src="./img/quote.svg" alt="" class="stats__testimonial__item__quote">
+							<p class="stats__testimonial__item__text">Referee Pro® nos ha ayudado a ser diferentes al resto de las Ligas. Vino a darnos organización y presencia.</p>
+							<div class="stats__testimonial__item__avatar flexbox">
+								<img src="./img/avatar5.svg" alt="">
+								<div class="stats__testimonial__item__avatar__content flexbox align-center-middle">
+									<p class="stats__testimonial__item__avatar__name">Luis Limón</p>
+									<p class="stats__testimonial__item__avatar__info">Dueño de la <a href="#" class="stats__testimonial__item__link" target="_blank">Liga Querétaro</a> y <a href="#" class="stats__testimonial__item__link" target="_blank">Fu7bol Xtremo</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="stats__testimonial__item">
+							<img src="./img/quote.svg" alt="" class="stats__testimonial__item__quote">
+							<p class="stats__testimonial__item__text">Referee Pro® me dió el tiempo libre que necesitaba para emprender otro
+								negocio que tenía muchos años queriendo hacer.</p>
+							<div class="stats__testimonial__item__avatar flexbox">
+								<img src="./img/avatar2.svg" alt="">
+								<div class="stats__testimonial__item__avatar__content flexbox align-center-middle">
+									<p class="stats__testimonial__item__avatar__name">David Alejandro Gamboa</p>
+									<p class="stats__testimonial__item__avatar__info">Presidente <span>Liga Supermanzana 95</span>, Cancún MX</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="stats__testimonial__arrow stats__testimonial__arrow--left flexbox align-center align-middle">
+						<img src="./img/arrow.svg" alt="Arrow">
+					</div>
+					<div class="stats__testimonial__arrow stats__testimonial__arrow--right flexbox align-center align-middle">
+						<img src="./img/arrow.svg" alt="Arrow">
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="contact" id="contact" style="background-image: url('./img/pitch.svg')">
+			<div class="grid-container">
+				<h3 class="contact__title">HOLA. TE HEMOS ESTADO ESPERANDO</h3>
+				<div class="contact__container flexbox align-justify" style="width:100%">
+					<form name="contact_form" action="" id="form-contact" class="contact__form" method="POST">
+						<p class="contact__form__title">Llena el siguiente formulario <br>para ponernos en contacto contigo.</p>
+						<div class="contact__form__div">
+							<div class="contact__form__sub">
+								<p>Tu perfil</p>
+							</div>
+							<div class="contact__form__group contact__form__profile">
+								<input type="radio" name="perfil" id="perfil1" value="1">
+								<label for="perfil1"></label>
+								<p>Organizador</p>
+								<span>Dirigente ó staff de competiciones de fútbol.</span>
+							</div>
+							<div class="contact__form__group contact__form__profile">
+								<input type="radio" name="perfil" id="perfil2" value="2">
+								<label for="perfil2"></label>
+								<p>Árbitro</p>
+								<span>Quien se encarga de llevar los juegos a buen término.</span>
+							</div>
+							<div class="contact__form__group contact__form__profile">
+								<input type="radio" name="perfil" id="perfil3" value="3">
+								<label for="perfil3"></label>
+								<p>Miembro de equipo</p>
+								<span>Jugador, entrenador, responsable de equipo, etc.</span>
+							</div>
+							<div class="contact__form__group contact__form__profile">
+								<input type="radio" name="perfil" id="perfil4" value="4">
+								<label for="perfil4"></label>
+								<p>Seguidor</p>
+								<span>Familia, amigos y fans de jugadores y equipos.</span>
+							</div>
+							<div class="contact__form__group contact__form__profile">
+								<input type="radio" name="perfil" id="perfil5" value="5">
+								<label for="perfil5"></label>
+								<p>Otro</p>
+								<span>Si ninguna de las anteriores te describe bien, elige esta opción.</span>
+							</div>
+						</div>
+						<!--Sección organizador-->
+						<div class="contact__form__hide" id="organizer">
+							<div class="contact__form__div">
+								<div class="contact__form__sub">
+									<p>Sobre tu organización</p>
+								</div>
+								<label for="organization">Nombre tu organización</label>
+								<input type="text" name="organization" id="organization" placeholder="ej. FeMexFut">
+							</div>
+							<div class="contact__form__div">
+								<label for="" class="only">Duración de tus competiciones</label>
+								<div class="contact__form__group">
+									<input type="radio" name="duration" id="duration1">
+									<label for="duration1"></label>
+									<p>Larga duración</p>
+									<span>Ligas y torneos que se llevan a cabo durante gran parte del año.</span>
+								</div>
+								<div class="contact__form__group">
+									<input type="radio" name="duration" id="duration2">
+									<label for="duration2"></label>
+									<p>Corta duración</p>
+									<span>Copas y torneos de una duración menor a un mes.</span>
+								</div>
+								<div class="contact__form__group">
+									<input type="radio" name="duration" id="duration3">
+									<label for="duration3"></label>
+									<p>Ámbas</p>
+								</div>
+								<div class="radio-duration-msg">Seleccione una opción</div>
+							</div>
+							<div class="contact__form__div" id="radio-teams">
+								<label for="" class="only">Cantidad de equipos participantes</label>
+								<div class="contact__form__group contact__form__group--small">
+									<input type="radio" name="teams" id="teams1">
+									<label for="teams1"></label>
+									<p>Menos de 20</p>
+								</div>
+								<div class="contact__form__group contact__form__group--small">
+									<input type="radio" name="teams" id="teams2">
+									<label for="teams2"></label>
+									<p>De 20 a 50</p>
+								</div>
+								<div class="contact__form__group contact__form__group--small">
+									<input type="radio" name="teams" id="teams3">
+									<label for="teams3"></label>
+									<p>De 50 a 100</p>
+								</div>
+								<div class="contact__form__group contact__form__group--small">
+									<input type="radio" name="teams" id="teams4">
+									<label for="teams4"></label>
+									<p>Más de 100</p>
+								</div>
+								<div class="radio-teams-msg">Seleccione una opción</div>
+							</div>
+							<div class="contact__form__div">
+								<label for="message_organizer">Mensaje (Opcional)</label>
+								<textarea name="message_organizer" id="message_organizer" cols="30" rows="10" placeholder="Platícanos de tu organización y háznos saber todas tus dudas..."></textarea>
+							</div>
+						</div>
+
+						<!--Sección arbitro-->
+						<div class="contact__form__hide" id="refere">
+							<div class="contact__form__div">
+								<div class="contact__form__sub">
+									<p>Sobre tu arbitraje</p>
+								</div>
+								<label for="organization_refere">Organización de Árbitros a la que perteneces</label>
+								<input type="text" name="organization_refere" id="organization_refere" placeholder="ej. Comisión de Árbitros FMF">
+							</div>
+							<div class="contact__form__div">
+								<label for="" class="only">Cantidad de ligas a las que das servicio</label>
+								<div class="contact__form__group contact__form__group--auto">
+									<input type="radio" name="refere_teams" id="refere_teams1">
+									<label for="refere_teams1"></label>
+									<p>1</p>
+								</div>
+								<div class="contact__form__group contact__form__group--auto">
+									<input type="radio" name="refere_teams" id="refere_teams2">
+									<label for="refere_teams2"></label>
+									<p>2</p>
+								</div>
+								<div class="contact__form__group contact__form__group--auto">
+									<input type="radio" name="refere_teams" id="refere_teams3">
+									<label for="refere_teams3"></label>
+									<p>3</p>
+								</div>
+								<div class="contact__form__group contact__form__group--auto">
+									<input type="radio" name="refere_teams" id="refere_teams4">
+									<label for="refere_teams4"></label>
+									<p>Más de 3</p>
+								</div>
+								<div class="radio-refere-teams-msg">Seleccione una opción</div>
+							</div>
+							<div class="contact__form__div">
+								<label for="message_refere">Mensaje (Opcional)</label>
+								<textarea name="message_refere" id="message_refere" cols="30" rows="10" placeholder="Platícanos de tu organización y háznos saber todas tus dudas..."></textarea>
+							</div>
+						</div>
+
+						<!--Sección miembro-->
+						<div class="contact__form__hide" id="member">
+							<div class="contact__form__div">
+								<div class="contact__form__middle">
+									<p>¿Estás buscando las estadísticas de tu liga o torneo?</p>
+									<a href="#fans_search" class="link__dotted link__dotted--bold">Encuéntralas aquí.</a>
+								</div>
+							</div>
+							<div class="contact__form__div">
+								<div class="contact__form__sub">
+									<p>Recomiéndanos con tu liga <span>(Opcional)</span></p>
+								</div>
+								<label for="organization_member">Liga o Torneo en los que participes</label>
+								<input type="text" name="organization_member" id="organization_member" placeholder="ej. CECAFF San Pedro, Córdica GDL, Copa Chivas">
+							</div>
+							<div class="contact__form__div">
+								<label for="message_member">Mensaje (Opcional)</label>
+								<textarea name="message_member" id="message_member" cols="30" rows="10" placeholder="Platícanos de tu interés en Referee Pro® y háznos saber todas tus dudas..."></textarea>
+							</div>
+						</div>
+
+						<!--Sección seguidor-->
+						<div class="contact__form__hide" id="follower">
+							<div class="contact__form__div">
+								<div class="contact__form__middle">
+									<p>¿Estás buscando las estadísticas de tu liga o torneo?</p>
+									<a href="#fans_search" class="link__dotted link__dotted--bold">Encuéntralas aquí.</a>
+								</div>
+							</div>
+							<div class="contact__form__div">
+								<div class="contact__form__sub">
+									<p>Recomiéndanos con tu liga <span>(Opcional)</span></p>
+								</div>
+								<label for="organization_follower">Liga o Torneo en que participa el equipo o jugadores que sigues</label>
+								<input type="text" name="organization_follower" id="organization_follower" placeholder="ej. CECAFF San Pedro, Córdica GDL, Copa Chivas">
+							</div>
+							<div class="contact__form__div">
+								<label for="message_follower">Mensaje</label>
+								<textarea name="message_follower" id="message_follower" cols="30" rows="10" placeholder="Platícanos de tu interés en Referee Pro® y háznos saber todas tus dudas..."></textarea>
+							</div>
+						</div>
+
+						<div class="contact__form__div">
+							<div class="contact__form__sub">
+								<p>Información de contacto</p>
+							</div>
+							<label for="name">Nombre completo</label>
+							<input type="text" name="name" id="name" placeholder="ej. Lionel Messi">
+							<div class="flexbox align-justify align-top" style="width:100%">
+								<div class="contact__form__div__sub">
+									<label for="city">Ciudad</label>
+									<input type="text" name="city" id="city" placeholder="Guadalajara">
+									<label for="email">Correo electrónico</label>
+									<input type="text" name="email" id="email" placeholder="ej. tucuenta@correo.com">
+								</div>
+								<div class="contact__form__div__sub">
+									<label for="country">País</label>
+									<input type="text" name="country" id="country" placeholder="ej. México">
+									<label for="phone">Teléfono (Opcional)</label>
+									<input type="text" name="phone" id="phone" placeholder="🇲🇽 +52 (MX)    ej. (55) 4455 5544">
+								</div>
+							</div>
+						</div>
+						<div class="contact__form__captcha">
+							<div id="captcha" class="g-recaptcha" data-sitekey="6Lel2YEUAAAAAFDzNKsZKu7Wf4ZYI84IOJUCBQVd"></div>
+						</div>
+						<div class="contact__loading">
+							<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+						</div>
+						<div class="contact__form__actions">
+							<p class="contact__form__actions__text">Al presionar el botón ‘ENVIAR INFORMACIÓN’ aceptas que has leído y entendido
+								los <a href="http://referee-pro.com/terminosycondiciones.html" target="_blank">Términos y condiciones</a>, y la <a href="http://referee-pro.com/politicasdeprivacidad.html" target="_blank">Política de privacidad</a> de Referee Pro®.</p>
+							<a id="send-form" class="btn-primary btn-primary__expanded">ENVIAR INFORMACIÓN</a>
+						</div>
+						<div class="contact__form__retro">
+							<div class="retro"></div>
+						</div>
+						<div class="thank-you">
+							<div class="thank-you__title">¡Gracias por darte el tiempo de contactarnos!  🙏🏼</div>
+							<p>Hemos recibido tu información y un miembro de nuestro equipo se pondrá en contacto contigo en un plazo máximo de 48 horas.</p>
+							<p>Mientras tanto, para conocer más sobre nuestra estructura de precios, sobre nosotros y nuestra historia, descarga nuestra presentación.</p>
+						</div>
+					
+					</form>
+					<div class="contact__address">
+						<p class="contact__address__text">Si lo prefieres, envíanos un correo electrónico, llámanos ó ven a visitarnos. Nos daría mucho gusto conocerte.</p>
+						<p class="contact__locale">PH2 - Edificio Lafayette <br>Av. Chapultepec 77, Colonia Americana 44160 Guadalajara, MX</p>
+						<a href="tel:+52 1 33 2237 8471" class="contact__info__link contact__wp">+52 1 (33) 2237 8471</a>
+						<a href="mailto:info@refereepro.com" class="contact__info__link contact__mail">info@refereepro.com</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="grid-container expanded footer__content flexbox">
+				<p class="footer__top text-center">We 🖤️ <span class="wrap typewrite" data-period="2000" data-type='[ "football", "fútbol", "calccio", "futébol", "Fussball" ]'></span></b></p>
+				<div class="footer__bottom flexbox align-justify">
+					<div class="footer__logo order-2">
+						<img src="./img/logo.svg" alt="RefereePro">
+						<p class="footer__logo__slogan">JUNTOS DIGITALIZAMOS AL FÚTBOL</p>
+						<p class="footer__logo__copy">© Copyright 2019 WAI Social S.A. de C.V. <br><a href="http://referee-pro.com/terminosycondiciones.html" target="_blank">Términos y condiciones legales</a> | <a  href="http://referee-pro.com/politicasdeprivacidad.html" target="_blank">Política de privacidad</a></p>
+					</div>
+					<div class="footer__navigation flexbox order-1">
+						<div class="footer__navigation__item">
+							<p class="footer__navigation__item__title text-uppercase">Referee Pro®</p>
+							<a href="#what" class="footer__navigation__item__link">QUÉ ES</a>
+							<a href="#how" class="footer__navigation__item__link">CÓMO FUNCIONA</a>
+							<a href="#why" class="footer__navigation__item__link">PORQUÉ</a>
+						</div>
+						<div class="footer__navigation__item">
+							<p class="footer__navigation__item__title text-uppercase">Ecosistema</p>
+							<a href="https://itunes.apple.com/mx/app/referee-pro-ref/id1438556211?l=en&mt=8" target="_blank" class="footer__navigation__item__link">REF! iOS</a>
+							<a href="https://play.google.com/store/apps/details?id=com.siine.referee&hl=en" target="_blank" class="footer__navigation__item__link">REF! ANDROID</a>
+							<a href="http://live.refereepro.com/" class="footer__navigation__item__link" target="_blank">INGRESA A CM</a>
+							<a href="http://refereepro.fans" class="footer__navigation__item__link" target="blank">FANS</a>
+						</div>
+						<div class="footer__navigation__item">
+							<p class="footer__navigation__item__title text-uppercase">Social</p>
+							<a href="https://www.instagram.com/referee_pro/" class="footer__navigation__item__link" target="blank">INSTAGRAM</a>
+							<a href="https://www.facebook.com/RefereeProFans" class="footer__navigation__item__link" target="blank">FACEBOOK</a>
+							<a href="https://twitter.com/RefereeProFut" class="footer__navigation__item__link" target="blank">TWITTER</a>
+						</div>
+						<div class="footer__navigation__item footer__navigation__item--no-margin">
+							<p class="footer__navigation__item__title text-uppercase">idioma</p>
+							<a href="" class="footer__navigation__item__link">ENGLISH</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
+
